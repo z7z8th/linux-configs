@@ -1,2 +1,2 @@
 >> for syncing config files to github
-all files in this folder are hard-links to cofig files.
+all files in this folder is copied by 'sync-to-here.sh'
