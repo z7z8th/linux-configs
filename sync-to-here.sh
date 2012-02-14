@@ -18,7 +18,7 @@ file_list='./.config/openbox
 
 echo "$file_list" | while read line;
 do
-    [ -d "$line" ] && continue
+    [ -d "$HOME/$line" ] && continue
     echo $line
     cp --parent "$HOME/$line" .
 done
