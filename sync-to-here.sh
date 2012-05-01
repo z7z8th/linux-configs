@@ -24,3 +24,13 @@ do
     echo $line
     cp --parent "$HOME/$line" .
 done
+
+
+sys_file_list='/etc/hosts'
+
+echo "$sys_file_list" | while read line;
+do
+    [ -d "$line" ] && continue
+    echo $line
+    cp --parent "$line" .
+done

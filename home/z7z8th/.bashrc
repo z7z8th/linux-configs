@@ -98,6 +98,16 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+set -o vi
+# ^p check for partial match in history
+bind -m vi-insert "\C-p":dynamic-complete-history
+        
+# ^n cycle through the list of partial matches
+bind -m vi-insert "\C-n":menu-complete
+
+# ^l clear screen
+bind -m vi-insert "\C-l":clear-screen
+
 export PATH=$PATH:/sbin:/usr/sbin:/usr/local/sbin
 export EDITOR=vi
 # color for manpage
@@ -110,3 +120,6 @@ export LESS_TERMCAP_ue=$'\E[0m'           # end underline
 export LESS_TERMCAP_us=$'\E[04;33m'       # begin underline
 
 alias bbdial='pppd file /etc/ppp/peers/barry-unicom'
+alias gae-proxy='~/Downloads/goagent/local/proxy.py'
+
+export LFS=/mnt/lfs
