@@ -16,7 +16,8 @@ file_list='.bashrc
 .config/lxpanel/LXDE
 .config/lxpanel/LXDE/config
 .config/lxpanel/LXDE/panels
-.config/lxpanel/LXDE/panels/panel'
+.config/lxpanel/LXDE/panels/panel
+.bash_aliases'
 
 echo "$file_list" | while read line;
 do

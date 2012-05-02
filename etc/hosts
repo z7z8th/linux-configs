@@ -112,7 +112,21 @@
 127.0.0.1	86get.joy.cn
 127.0.0.1	86log.joy.cn
 
-
+203.208.46.1	dl-ssl.google.com
+203.208.46.1	xmpp.l.google.com
+203.208.46.1	alt1.xmpp.l.google.com
+203.208.46.1	alt2.xmpp.l.google.com
+203.208.46.1	play.google.com
+203.208.46.1	checkout.google.com
+203.208.46.1    alex-sol.appspot.com
+203.208.46.1    alex-zro-hrd.appspot.com
+203.208.45.208  goo.gl    
+203.208.46.1    developers.google.com
+203.208.46.1    developer.android.com
+203.208.46.1    source.android.com
+203.208.45.208    android.clients.google.com
+203.208.46.1    mtalk.google.com
+#203.208.46.1    goo.gl
 #Google	Plus Game
 203.208.46.1	ssl.gstatic.com
 203.208.46.1	gg.google.com
@@ -155,8 +169,7 @@
 203.208.46.1	google.com
 203.208.46.1	www.google.com
 203.208.46.1	maps.google.com
-203.208.46.1	ditu.google.com
-203.208.46.1	ditu.google.cn
+203.208.46.1	ditu.google.com ditu.google.cn
 203.208.46.1	mail.google.com
 203.208.46.1	news.google.com
 209.85.225.109	imap.gmail.com
@@ -166,6 +179,7 @@
 203.208.46.1	apis.google.com
 203.208.46.1	sites.google.com
 203.208.46.1	dl.google.com
+203.208.46.1	support.google.com
 203.208.46.1	ssl-dl.google.com
 203.208.46.1	groups.google.com
 203.208.46.1	groups-china.l.google.com
@@ -192,6 +206,12 @@
 203.208.46.1	images2-focus-opensocial.googleusercontent.com
 203.208.46.1	images3-focus-opensocial.googleusercontent.com
 203.208.46.1	encrypted.google.com
+203.208.46.1	encrypted-tbn0.google.com
+203.208.46.1	encrypted-tbn1.google.com
+203.208.46.1	encrypted-tbn2.google.com
+203.208.46.1	encrypted-tbn3.google.com
+203.208.46.1	encrypted-tbn4.google.com
+203.208.46.1	encrypted-tbn5.google.com
 203.208.46.1	chrome.google.com
 203.208.45.208	profiles.google.com
 203.208.45.208	plus.google.com

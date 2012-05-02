@@ -105,7 +105,7 @@
 
        use obconf if you want to change these without having to log out
        and back in -->
-    <number>3</number>
+    <number>4</number>
     <firstdesk>1</firstdesk>
     <names>
       <!-- set names up here if you want to, like this:
@@ -306,6 +306,11 @@
         <command>firefox</command>
       </action>
     </keybind>
+    <keybind key="W-b">
+      <action name="Execute">
+        <command>thunderbird</command>
+      </action>
+    </keybind>
     <keybind key="W-g">
       <action name="Execute">
         <command>gvim</command>
@@ -333,12 +338,12 @@
     </keybind>
     <keybind key="Print">
       <action name="Execute">
-        <command>scrot -q 90 -e 'mv "$f" ~/screenshots/'</command>
+        <command>scrot -q 90 -e 'mkdir -p ~/screenshots; mv "$f" ~/screenshots/'</command>
       </action>
     </keybind>
     <keybind key="A-Print">
       <action name="Execute">
-        <command>scrot -q 90 -u -e 'mv "$f" ~/screenshots/'</command>
+        <command>scrot -q 90 -u -e 'mkdir -p ~/screenshots; mv "$f" ~/screenshots/'</command>
       </action>
     </keybind>
     <keybind key="W-Right">

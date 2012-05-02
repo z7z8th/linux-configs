@@ -15,13 +15,15 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTSIZE=1000
+HISTFILESIZE=2000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
 shopt -s checkwinsize
 
 # make less more friendly for non-text input files, see lesspipe(1)
-#[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
 # set variable identifying the chroot you work in (used in the prompt below)
 if [ -z "$debian_chroot" ] && [ -r /etc/debian_chroot ]; then
@@ -82,6 +84,10 @@ alias ll='ls -l'
 alias la='ls -A'
 alias l='ls -CF'
 
+# Add an "alert" alias for long running commands.  Use like so:
+#   sleep 10; alert
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+
 # Alias definitions.
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -98,17 +104,6 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-set -o vi
-# ^p check for partial match in history
-bind -m vi-insert "\C-p":dynamic-complete-history
-        
-# ^n cycle through the list of partial matches
-bind -m vi-insert "\C-n":menu-complete
-
-# ^l clear screen
-bind -m vi-insert "\C-l":clear-screen
-
-export PATH=$PATH:/sbin:/usr/sbin:/usr/local/sbin
 export EDITOR=vi
 # color for manpage
 export LESS_TERMCAP_mb=$'\E[05;34m'       # begin blinking
@@ -119,7 +114,4 @@ export LESS_TERMCAP_so=$'\E[44;33m'       # begin standout-mode
 export LESS_TERMCAP_ue=$'\E[0m'           # end underline
 export LESS_TERMCAP_us=$'\E[04;33m'       # begin underline
 
-alias bbdial='pppd file /etc/ppp/peers/barry-unicom'
-alias gae-proxy='~/Downloads/goagent/local/proxy.py'
 
-export LFS=/mnt/lfs
