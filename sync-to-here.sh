@@ -17,13 +17,17 @@ file_list='.bashrc
 .config/lxpanel/LXDE/config
 .config/lxpanel/LXDE/panels
 .config/lxpanel/LXDE/panels/panel
-.bash_aliases'
+.bash_aliases
+.bash_PS1
+.gitconfig'
 
 echo "$file_list" | while read line;
 do
-    [ -d "$HOME/$line" ] && continue
-    echo $line
-    cp --parent "$HOME/$line" .
+    file_path=$HOME/$line
+    [ -d "$file_path" ] && continue
+    [ ! -e "$file_path" ] && { echo "*** $file_path does not exists"; continue; }
+    echo $file_path
+    cp --parent "$file_path" .
 done
 
 

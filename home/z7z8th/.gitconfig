@@ -1,0 +1,22 @@
+[color]
+	ui = auto
+[user]
+	name = Bob.Zhao
+	email = bob.zhao@infomax.com.tw
+[alias]
+	co = checkout
+	br = branch
+	cm = commit
+	st = status
+    di = diff
+    rst = reset
+    rb = rebase
+    sbm = submodule
+    cfg = config
+    ft = fetch
+    mg = merge
+    ps = push
+    pl = pull
+    rem = remote
+	unstage = reset HEAD --
+	last = log -1 HEAD
