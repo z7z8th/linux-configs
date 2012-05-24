@@ -169,7 +169,8 @@
 203.208.46.1	google.com
 203.208.46.1	www.google.com
 203.208.46.1	maps.google.com
-203.208.46.1	ditu.google.com ditu.google.cn
+203.208.46.1	ditu.google.com
+203.208.46.1	ditu.google.cn
 203.208.46.1	mail.google.com
 203.208.46.1	news.google.com
 209.85.225.109	imap.gmail.com
@@ -213,10 +214,10 @@
 203.208.46.1	encrypted-tbn4.google.com
 203.208.46.1	encrypted-tbn5.google.com
 203.208.46.1	chrome.google.com
-203.208.45.208	profiles.google.com
-203.208.45.208	plus.google.com
-203.208.45.208	plus.url.google.com
-203.208.45.208	plusone.google.com
+74.125.71.94	profiles.google.com
+74.125.71.94	plus.google.com
+74.125.71.94	plus.url.google.com
+74.125.71.94	plusone.google.com
 203.208.46.1	talkgadget.google.com
 203.208.46.1	hostedtalkgadget.google.com
 203.208.46.1	talkgadget.l.google.com

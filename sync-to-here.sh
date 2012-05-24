@@ -19,7 +19,8 @@ file_list='.bashrc
 .config/lxpanel/LXDE/panels/panel
 .bash_aliases
 .bash_PS1
-.gitconfig'
+.gitconfig
+.conkyrc'
 
 echo "$file_list" | while read line;
 do
