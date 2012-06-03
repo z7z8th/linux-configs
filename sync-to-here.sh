@@ -32,7 +32,9 @@ do
 done
 
 
-sys_file_list='/etc/hosts'
+sys_file_list='/etc/hosts
+/etc/apt/preferences
+/etc/apt/apt.conf'
 
 echo "$sys_file_list" | while read line;
 do
