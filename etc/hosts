@@ -126,9 +126,10 @@
 203.208.46.1    source.android.com
 203.208.45.208    android.clients.google.com
 203.208.46.1    mtalk.google.com
-203.208.46.1    download-chromium.appspot.com
 #203.208.46.1    goo.gl
-
+203.208.46.1	blogspot.com
+#
+#
 #Google	Plus Game
 203.208.46.1	ssl.gstatic.com
 203.208.46.1	gg.google.com
@@ -167,7 +168,13 @@
 
 #Google
 203.208.46.1	drive.google.com
-203.208.46.1	music.google.com
+203.208.46.1	0.drive.google.com
+203.208.46.1	1.drive.google.com
+203.208.46.1	2.drive.google.com
+203.208.46.1	3.drive.google.com
+203.208.46.1	4.drive.google.com
+203.208.46.1	5.drive.google.com
+203.208.46.1	6.drive.google.com
 203.208.46.1	kelvin-mirex-svn.googlecode.com
 203.208.46.1	google.com
 203.208.46.1	www.google.com
@@ -188,6 +195,13 @@
 209.85.225.109	gmail-imap.l.google.com
 203.208.46.1	code.google.com
 203.208.46.1	docs.google.com
+203.208.46.1	0.docs.google.com
+203.208.46.1	1.docs.google.com
+203.208.46.1	2.docs.google.com
+203.208.46.1	3.docs.google.com
+203.208.46.1	4.docs.google.com
+203.208.46.1	5.docs.google.com
+203.208.46.1	6.docs.google.com
 203.208.46.1	apis.google.com
 203.208.46.1	sites.google.com
 203.208.46.1	dl.google.com
