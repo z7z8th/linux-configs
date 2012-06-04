@@ -169,6 +169,14 @@
 203.208.46.1	google.com
 203.208.46.1	www.google.com
 203.208.46.1	maps.google.com
+203.208.46.1	maps.google.cn
+203.208.46.1	maps.google.com.cn
+203.208.46.1	mts0.google.com
+203.208.46.1	mts1.google.com
+203.208.46.1	mts2.google.com
+203.208.46.1	mts3.google.com
+203.208.46.1	mts4.google.com
+203.208.46.1	mts5.google.com
 203.208.46.1	ditu.google.com
 203.208.46.1	ditu.google.cn
 203.208.46.1	mail.google.com
@@ -195,6 +203,9 @@
 203.208.46.1	plus.url.google.com.hk
 203.208.46.1	www.google.com.hk
 203.208.46.1	translate.google.com
+203.208.46.1	translate.google.cn
+203.208.46.1	translate.google.com.hk
+203.208.46.1	translate.google.com.cn
 203.208.46.1	translate.googleusercontent.com
 203.208.46.1	wenda.google.com.hk
 203.208.46.1	gstatic.com
