@@ -1,0 +1,10 @@
+deb http://mirrors.163.com/ubuntu maverick main restricted universe multiverse
+deb-src http://mirrors.163.com/ubuntu maverick main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu maverick-backports main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu maverick-proposed main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu maverick-security main restricted universe multiverse
+deb http://mirrors.163.com/ubuntu maverick-updates main restricted universe multiverse
+
+#deb http://mirrors.163.com/ubuntu/ hardy multiverse
+# deb http://archive.canonical.com/ lucid partner
+deb http://archive.canonical.com maverick partner
