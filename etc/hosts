@@ -187,6 +187,13 @@
 203.208.46.1	mts3.google.com
 203.208.46.1	mts4.google.com
 203.208.46.1	mts5.google.com
+203.208.46.1	khms0.google.com
+203.208.46.1	khms1.google.com
+203.208.46.1	khms2.google.com
+203.208.46.1	khms3.google.com
+203.208.46.1	khms4.google.com
+203.208.46.1	khms5.google.com
+203.208.46.1	khms6.google.com
 203.208.46.1	ditu.google.com
 203.208.46.1	ditu.google.cn
 203.208.46.1	mail.google.com
@@ -524,4 +531,5 @@
 203.208.47.103	r24.pek01s04.c.youtube.com
 203.208.47.167	r24.pek01s05.c.youtube.com
 
-
+# 
+216.194.70.6    shell.cjb.net 
