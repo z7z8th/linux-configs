@@ -210,21 +210,15 @@ function promptcmd () {
             PS1="${PS1}\[${COLOR_BROWN}\]"
         fi
     fi
-    PS1="${PS1} }\$\[${COLOR_DEFAULT}\] "
+    PS1="${PS1} }\n\$\[${COLOR_DEFAULT}\] "
 }
 
 # Trim working dir to 1/4 the screen width
 function prompt_workingdir () {
-  local pwdmaxlen=$(($COLUMNS/4))
-  local trunc_symbol="..."
   if [[ $PWD == $HOME* ]]; then
     newPWD="~${PWD#$HOME}"
   else
     newPWD=${PWD}
-  fi
-  if [ ${#newPWD} -gt $pwdmaxlen ]; then
-    local pwdoffset=$(( ${#newPWD} - $pwdmaxlen + 3 ))
-    newPWD="${trunc_symbol}${newPWD:$pwdoffset:$pwdmaxlen}"
   fi
   echo $newPWD
 }
@@ -243,10 +237,10 @@ function load_prompt () {
 
     if  [[ $parent_process == script* ]]; then
         PROMPT_COMMAND=""
-        PS1="\t - \# - \u@\H { \w }\$ "
+        PS1="\t - \# - \u@\H { \w }\n\$ "
     elif [[ $parent_process == emacs* || $parent_process == xemacs* ]]; then
         PROMPT_COMMAND=""
-        PS1="\u@\h { \w }\$ "
+        PS1="\u@\h { \w }\n\$ "
     else
         export DAY=$(date +%A)
         PROMPT_COMMAND=promptcmd
