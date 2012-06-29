@@ -144,7 +144,7 @@
     <right>0</right>
   </margins>
   <dock>
-    <position>TopLeft</position>
+    <position>Top</position>
     <!-- (Top|Bottom)(Left|Right|)|Top|Bottom|Left|Right|Floating -->
     <floatingX>0</floatingX>
     <floatingY>0</floatingY>
@@ -303,7 +303,7 @@
     </keybind>
     <keybind key="W-f">
       <action name="Execute">
-        <command>firefox</command>
+        <command>x-www-browser</command>
       </action>
     </keybind>
     <keybind key="W-b">

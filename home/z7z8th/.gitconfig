@@ -10,6 +10,7 @@
 	cmam = commit -am
 	st = status
     di = diff
+    ldi = diff HEAD^
     rst = reset
     rb = rebase
     sbm = submodule
@@ -21,3 +22,4 @@
     rem = remote
 	unstage = reset HEAD --
 	last = log -1 HEAD
+    lgp = log --format='format:%Cgreen%ai %Cred%H%Creset %s'

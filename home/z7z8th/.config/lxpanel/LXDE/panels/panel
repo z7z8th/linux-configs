@@ -23,13 +23,6 @@ Global {
 }
 
 Plugin {
-    type = space
-    Config {
-        Size=2
-    }
-}
-
-Plugin {
     type = menu
     Config {
         image=/usr/share/lxde/images/lxde-icon.png
@@ -46,13 +39,6 @@ Plugin {
             image=gnome-logout
             command=logout
         }
-    }
-}
-
-Plugin {
-    type = space
-    Config {
-        Size=4
     }
 }
 
@@ -105,15 +91,6 @@ Plugin {
         TooltipFmt=%A %x
         BoldFont=0
         IconOnly=0
-    }
-}
-
-Plugin {
-    type = launchbar
-    Config {
-        Button {
-            id=lxde-screenlock.desktop
-        }
     }
 }
 
