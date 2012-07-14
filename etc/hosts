@@ -1,5 +1,5 @@
 #######################################
-#			Note:Twitter and Fackbook need forced https
+# Note:Twitter and Fackbook need forced https
 #######################################
 127.0.0.1			localhost	z7z8th-pc
 #start
@@ -532,8 +532,10 @@
 203.208.47.103			r24.pek01s04.c.youtube.com
 203.208.47.167			r24.pek01s05.c.youtube.com
 
-#			
+#
 216.194.70.6			shell.cjb.net
 
+# 
+216.194.70.6    shell.cjb.net 
 #dropbox
 184.73.171.217			dl-web.dropbox.com
