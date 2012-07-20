@@ -124,3 +124,17 @@ alias apti='apt-get install'
 alias aptu='apt-get update'
 
 [ -f "$HOME/.bash_PS1" ] && . $HOME/.bash_PS1
+#!/bin/sh -
+
+[ -z "$HOME" -o ! -e "$HOME" ] && { echo "HOME variable not set correctly. exiting..."; exit 1; }
+python_user_dir=$HOME/python
+python_user_site_packages_dir=$python_user_dir/lib/python2.6/site-packages
+mkdir -p $python_user_site_packages_dir
+export PATH=$PATH:$python_user_dir/bin
+export PYTHONPATH=$python_user_site_packages_dir
+
+#set -x
+#cd gitosis
+#python setup.py install --prefix $python_user_dir
+#cd ..
+
