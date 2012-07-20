@@ -1,6 +1,6 @@
-#Package: *
-#Pin: release a=testing
-#Pin-Priority: 990
+Package: *
+Pin: release a=testing
+Pin-Priority: 990
 
 Package: *
 Pin: release a=stable-backports
@@ -17,5 +17,5 @@ Pin-Priority: 400
 
 Package: iceweasel
 Pin: release a=rc-buggy
-Pin-Priority: 900
+Pin-Priority: 990
 

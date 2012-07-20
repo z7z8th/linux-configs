@@ -15,4 +15,3 @@ alias cda2a='cd /opt/android2.2-BSP12R_A1/'
 
 alias gae-proxy='~/Downloads/goagent/local/proxy.py'
 
-alias bboot='croot && echo -e "n\ny\nn" | infomax_brunch boot 3'
