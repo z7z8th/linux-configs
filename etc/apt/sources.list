@@ -3,18 +3,19 @@
 # Line commented out by installer because it failed to verify:
 #deb-src http://security.debian.org/ squeeze/updates main
 
-deb http://mirrors.163.com/debian testing main contrib non-free
-deb http://mirrors.163.com/debian testing-proposed-updates main contrib non-free
 deb http://security.debian.org testing/updates main contrib non-free
 
-deb http://mirrors.163.com/debian stable main contrib non-free
-deb http://mirrors.163.com/debian stable-updates main contrib non-free
-deb http://mirrors.163.com/debian stable-proposed-updates main contrib non-free
+deb http://mirrors.163.com/debian testing main contrib non-free
+deb http://mirrors.163.com/debian testing-proposed-updates main contrib non-free
 
 deb http://mirrors.163.com/debian proposed-updates main contrib non-free
-deb http://mirrors.ustc.edu.cn/debian-backports stable-backports main contrib non-free
+deb http://mirrors.163.com/debian stable main contrib non-free
+deb http://mirrors.163.com/debian squeeze-proposed-updates main contrib non-free
+deb http://mirrors.163.com/debian stable-updates main contrib non-free
+deb http://mirrors.163.com/debian-backports squeeze-backports main contrib non-free
 
-deb http://mirrors.163.com/debian rc-buggy main contrib non-free
+deb http://mirrors.163.com/debian experimental main contrib non-free
 
-deb http://mirrors.ustc.edu.cn/debian-security testing/updates main contrib non-free
-deb http://mirrors.ustc.edu.cn/debian-security stable/updates main contrib non-free
+deb http://mirrors.163.com/debian-security testing/updates main contrib non-free
+deb http://mirrors.163.com/debian-security stable/updates main contrib non-free
+
