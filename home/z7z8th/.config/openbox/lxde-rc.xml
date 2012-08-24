@@ -241,13 +241,22 @@
     <keybind key="W-x">
       <action name="ToggleMaximizeFull"/>
     </keybind>
+    <keybind key="C-A-x">
+      <action name="ToggleMaximizeFull"/>
+    </keybind>
     <keybind key="W-s">
       <action name="ToggleShade"/>
     </keybind>
     <keybind key="W-w">
       <action name="ToggleDecorations"/>
     </keybind>
+    <keybind key="C-A-w">
+      <action name="ToggleDecorations"/>
+    </keybind>
     <keybind key="W-c">
+      <action name="Reconfigure"/>
+    </keybind>
+    <keybind key="C-A-c">
       <action name="Reconfigure"/>
     </keybind>
     <keybind key="W-i">
@@ -290,8 +299,22 @@
         <command>pcmanfm</command>
       </action>
     </keybind>
+    <keybind key="C-A-e">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>PCManFM</name>
+        </startupnotify>
+        <command>pcmanfm</command>
+      </action>
+    </keybind>
     <!--keybindings for LXPanel -->
     <keybind key="W-r">
+      <action name="Execute">
+        <command>lxpanelctl run</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-r">
       <action name="Execute">
         <command>lxpanelctl run</command>
       </action>
@@ -301,7 +324,27 @@
         <command>x-terminal-emulator</command>
       </action>
     </keybind>
+    <keybind key="C-A-t">
+      <action name="Execute">
+        <command>x-terminal-emulator</command>
+      </action>
+    </keybind>
+    <keybind key="W-a">
+      <action name="Execute">
+        <command>gcalctool</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-a">
+      <action name="Execute">
+        <command>gcalctool</command>
+      </action>
+    </keybind>
     <keybind key="W-f">
+      <action name="Execute">
+        <command>x-www-browser</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-f">
       <action name="Execute">
         <command>x-www-browser</command>
       </action>
@@ -317,6 +360,11 @@
       </action>
     </keybind>
     <keybind key="W-g">
+      <action name="Execute">
+        <command>gvim</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-g">
       <action name="Execute">
         <command>gvim</command>
       </action>

@@ -15,11 +15,7 @@ Pin: release a=unstable
 Pin-Priority: 400
 
 
-#Package: iceweasel
-#Pin: release a=rc-buggy
-#Pin-Priority: 999
-
-Package: *iceweasel*
+Package: *iceweasel* *icedove* *iceowl* xul-ext* calendar-timezones
 Pin: release n=experimental
 Pin-Priority: 999
 
