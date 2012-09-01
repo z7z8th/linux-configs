@@ -1,0 +1,34 @@
+#!/bin/sh
+
+### BEGIN INIT INFO
+# Provides:          lcd_brightness
+# Required-Start:    $local_fs $remote_fs
+# Required-Stop:     $local_fs $remote_fs
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Save/Restore LCD Brightness
+### END INIT INFO
+
+
+# save lcd backlight setting
+LCD_DEFAULT_BRIGHTNESS=10
+LCD_BRIGHTNESS_CFG=/etc/saved_configs/lcd_brightness
+LCD_BRIGHTNESS_SYSFS=/sys/class/backlight/acpi_video0/brightness
+
+case $1 in
+    start)
+        echo "Restore lcd brightness setting"
+        [ -e "$LCD_BRIGHTNESS_CFG" ] || echo $LCD_DEFAULT_BRIGHTNESS > $LCD_BRIGHTNESS_CFG
+        cat $LCD_BRIGHTNESS_CFG > $LCD_BRIGHTNESS_SYSFS
+        ;;
+    stop)
+        echo "Save lcd brightness setting"
+        cat $LCD_BRIGHTNESS_SYSFS > $LCD_BRIGHTNESS_CFG
+        ;;
+    status)
+        echo -n "Current LCD Brightness: "
+        cat $LCD_BRIGHTNESS_SYSFS
+        ;;
+esac
+
+exit 0
