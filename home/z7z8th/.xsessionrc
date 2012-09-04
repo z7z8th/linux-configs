@@ -3,6 +3,6 @@ synclient TapButton1=1
 syndaemon -i 1 -d &
 
 
-nohup python ~/downloads/goagent/local/proxy.py >/tmp/goagent.log &
+nohup python ~/github/goagent/local/proxy.py >/tmp/goagent.log &
 
 nohup ~/.dropbox-dist/dropboxd >/tmp/dropboxd.log &
