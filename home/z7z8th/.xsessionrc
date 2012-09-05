@@ -1,7 +1,8 @@
 # touchpad
-synclient TapButton1=1
-syndaemon -i 1 -d &
+#synclient TapButton1=1
+#syndaemon -i 1 -d &
 
+xhost +local:
 
 nohup python ~/github/goagent/local/proxy.py >/tmp/goagent.log &
 
