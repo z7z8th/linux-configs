@@ -65,6 +65,11 @@ apt-get install ltrace
 
 # text process
 apt-get install gawk
+
+# text Mail
+apt-get install mutt notmuch-mutt mutt-patched offlineimap
+
+
 ###
 ############################ END OF UPDATE BASE DEPENDENCY ########################
 
@@ -88,7 +93,7 @@ apt-get install gtk-chtheme gtk2-engines gtk2-engines-murrine clearlooks-phenix-
 apt-get install im-config fcitx fcitx-tools fcitx-pinyin
 
 # www-browser and mail-client
-apt-get install iceweasel icedove
+apt-get install iceweasel mozplugger icedove
 apt-get install flashplugin-nonfree
 
 # file browser/manager
@@ -124,9 +129,8 @@ apt-get install blueman
 apt-get install lxde
 apt-get purge lxterminal xarchiver leafpad gpicview lxmusic
 
-# need by lxde-logout for supporting suspend/hibernate
-# but hal conflicts with xserver-xorg
-aptitude install hal
+# abstract hw layer
+apt-get install hal
 
 # X utils
 apt-get install vbetools xscreensaver x11-apps
@@ -142,7 +146,12 @@ easy_install vim-bridge
 apt-get install sg3-utils lsscsi
 
 # serial
-apt-get install ckermit setserial
+apt-get install ckermit setserial lrzsz minicom
+
+# development
+apt-get install d-feet
+apt-get install intltool pkg-config
+
 
 # development utils and libraries (android or ...)
 apt-get install sun-java6-jdk
@@ -176,7 +185,11 @@ apt-get install unix2dos
 apt-get install mesa-utils glew-utils
 
 # office
-apt-get install evince libreoffice
+apt-get install evince libreoffice libreoffice-gtk libreoffice-gtk3
+apt-get install chmsee
+
+# remote control
+apt-get install grdesktop
 
 echo -e "\n\n###############################################################################"
 echo -e "Everything finished, go bringup your configs of vim/zsh/iceweasel"
