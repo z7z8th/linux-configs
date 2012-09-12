@@ -67,7 +67,11 @@ apt-get install ltrace
 apt-get install gawk
 
 # text Mail
-apt-get install mutt notmuch-mutt mutt-patched offlineimap
+apt-get install mutt notmuch-mutt mutt-patched mutt-vc-query abook
+apt-get install getmail4 procmail mailcheck
+
+# /usr/bin/notify-send, for new mail notification
+apt-get install libnotify-bin
 
 
 ###
@@ -81,7 +85,7 @@ read -p "Install X Windows Environment? Not a Server? Ctrl-C to Quit!"
 apt-get install ttf-wqy-* xfonts-wqy unifont fonts-droid gsfonts
 
 # xserver
-apt-get install xserver-xorg-core xdm xserver-xorg-video-intel xserver-xorg-input-all
+apt-get install xserver-xorg-core gdm xdm xserver-xorg-video-intel xserver-xorg-input-all
 
 # accessories
 apt-get install gnome-terminal xterm gcalctool
@@ -161,8 +165,11 @@ aptitude install lib32readline5-dev  # have dependency problem, so use aptitude
 apt-get install schedtool git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev libc6-dev lib32ncurses5-dev ia32-libs x11proto-core-dev libx11-dev lib32readline5-dev lib32z-dev libgl1-mesa-dev g++-multilib mingw32 tofrodos python-markdown libxml2-utils xsltproc
 
 # wine
-apt-get install wine-bin wine-utils libwine libwine-alsa libwine-gl libwine-gecko-1.4
+apt-get install wine-bin wine-utils libwine libwine-alsa libwine-gl libwine-gecko-1.4 winetricks
 apt-get install lib32nss-mdns    # for wine to connect internet
+
+# ms fonts
+apt-get cabextract p7zip ttf-mscorefonts-installer
 
 # file share
 apt-get install samba

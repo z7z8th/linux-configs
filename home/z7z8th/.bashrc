@@ -120,6 +120,10 @@ export LESS_TERMCAP_ue=$'\E[0m'            # end underline
 export LESS_TERMCAP_us=$'\E[4;5;1;34m'     # begin underline
 
 [ -f "$HOME/.bash_PS1" ] && . $HOME/.bash_PS1
+
+export PATH=$PATH:/sbin:/usr/sbin:/usr/local/sbin
+
+
 #!/bin/sh -
 
 [ -z "$HOME" -o ! -e "$HOME" ] && { echo "HOME variable not set correctly. exiting..."; exit 1; }
