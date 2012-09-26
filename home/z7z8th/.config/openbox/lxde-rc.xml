@@ -358,6 +358,16 @@
         <command>thunderbird</command>
       </action>
     </keybind>
+    <keybind key="W-m">
+      <action name="Execute">
+        <command>x-terminal-emulator -e mutt</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-m">
+      <action name="Execute">
+        <command>x-terminal-emulator -e mutt</command>
+      </action>
+    </keybind>
     <keybind key="W-s">
       <action name="Execute">
         <command>skype</command>

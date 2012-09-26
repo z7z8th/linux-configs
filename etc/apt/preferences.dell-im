@@ -20,7 +20,7 @@ Pin: release n=experimental
 Pin-Priority: 999
 
 Package: *iceweasel*
-Pin: release n=experimental, v=14.0.1-2
+Pin: release n=experimental
 Pin-Priority: 999
 
 

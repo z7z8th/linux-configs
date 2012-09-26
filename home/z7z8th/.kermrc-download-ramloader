@@ -4,7 +4,7 @@ set stop-bits 1
 
 set parity none
 set carrier-watch off
-set flow-control rts/cts
+set flow-control none
 set prefixing all
 set reliable off
 set clearchannel off
