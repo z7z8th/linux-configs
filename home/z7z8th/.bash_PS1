@@ -187,9 +187,9 @@ function promptcmd () {
 
     # Working directory
     if [ -w "${PWD}" ]; then
-        PS1="${PS1}\[${COLOR_GREEN}\]$(prompt_workingdir)"
+        PS1="${PS1}\[${COLOR_GREEN}\]\w"
     else
-        PS1="${PS1}\[${COLOR_RED}\]$(prompt_workingdir)"
+        PS1="${PS1}\[${COLOR_RED}\]\w"
     fi
 
     # Closing bracket } and $\#
@@ -218,7 +218,7 @@ function prompt_workingdir () {
   if [[ $PWD == $HOME* ]]; then
     newPWD="~${PWD#$HOME}"
   else
-    newPWD=${PWD}
+    newPWD='\w'
   fi
   echo $newPWD
 }

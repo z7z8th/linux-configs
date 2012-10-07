@@ -1,0 +1,9 @@
+# touchpad
+#synclient TapButton1=1
+#syndaemon -i 1 -d &
+
+xhost +local:
+
+nohup python ~/github/goagent/local/proxy.py >/tmp/goagent.log &
+
+nohup ~/.dropbox-dist/dropboxd >/tmp/dropboxd.log &
