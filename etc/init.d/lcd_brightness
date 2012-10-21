@@ -15,20 +15,28 @@ LCD_DEFAULT_BRIGHTNESS=10
 LCD_BRIGHTNESS_CFG=/etc/saved_configs/lcd_brightness
 LCD_BRIGHTNESS_SYSFS=/sys/class/backlight/acpi_video0/brightness
 
+# use lsb-base
+. /lib/lsb/init-functions
+
 case $1 in
     start)
-        echo "Restore lcd brightness setting"
+        log_daemon_msg "Restore lcd brightness setting" "lcd_brightness"
         [ -e "$LCD_BRIGHTNESS_CFG" ] || echo $LCD_DEFAULT_BRIGHTNESS > $LCD_BRIGHTNESS_CFG
         cat $LCD_BRIGHTNESS_CFG > $LCD_BRIGHTNESS_SYSFS
+        log_end_msg $?
         ;;
     stop)
-        echo "Save lcd brightness setting"
+        log_daemon_msg "Save lcd brightness setting" "lcd_brightness"
         cat $LCD_BRIGHTNESS_SYSFS > $LCD_BRIGHTNESS_CFG
+        log_end_msg $?
         ;;
     status)
         echo -n "Current LCD Brightness: "
         cat $LCD_BRIGHTNESS_SYSFS
         ;;
+	*)
+		echo "Usage: $0 {start|stop|status}"
+		exit 1
 esac
 
 exit 0
