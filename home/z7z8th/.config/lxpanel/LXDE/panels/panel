@@ -3,11 +3,11 @@
 
 Global {
     edge=bottom
-    allign=left
+    allign=center
     margin=0
     widthtype=percent
     width=100
-    height=20
+    height=18
     transparent=0
     tintcolor=#000000
     alpha=0
@@ -69,7 +69,7 @@ Plugin {
         tooltips=1
         IconsOnly=0
         ShowAllDesks=0
-        UseMouseWheel=1
+        UseMouseWheel=0
         UseUrgencyHint=1
         FlatButton=0
         MaxTaskWidth=150

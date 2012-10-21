@@ -2,6 +2,12 @@
 # Note:Twitter and Fackbook need forced https
 #######################################
 127.0.0.1			localhost	z7z8th-pc
+
+# im
+172.31.42.40        szfs
+172.31.42.220       szftp
+
+
 #start
 #Fuli
 173.212.244.182			ccav.com
@@ -209,6 +215,8 @@
 209.85.225.109			gmail-imap.l.google.com
 203.208.47.1			code.google.com
 203.208.47.1			docs.google.com
+203.208.47.1            upload.docs.google.com
+203.208.47.1            large-uploads.l.google.com
 203.208.47.1			0.docs.google.com
 203.208.47.1			1.docs.google.com
 203.208.47.1			2.docs.google.com
@@ -539,3 +547,6 @@
 216.194.70.6    shell.cjb.net 
 #dropbox
 184.73.171.217			dl-web.dropbox.com
+
+#122.228.243.22          dynamic.12306.cn
+#61.183.42.94            dynamic.12306.cn

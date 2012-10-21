@@ -65,6 +65,15 @@ apt-get install ltrace
 
 # text process
 apt-get install gawk
+
+# text Mail
+apt-get install mutt notmuch-mutt mutt-patched mutt-vc-query abook
+apt-get install getmail4 procmail mailcheck
+
+# /usr/bin/notify-send, for new mail notification
+apt-get install libnotify-bin
+
+
 ###
 ############################ END OF UPDATE BASE DEPENDENCY ########################
 
@@ -76,7 +85,7 @@ read -p "Install X Windows Environment? Not a Server? Ctrl-C to Quit!"
 apt-get install ttf-wqy-* xfonts-wqy unifont fonts-droid gsfonts
 
 # xserver
-apt-get install xserver-xorg-core xdm xserver-xorg-video-intel xserver-xorg-input-all
+apt-get install xserver-xorg-core gdm xdm xserver-xorg-video-intel xserver-xorg-input-all
 
 # accessories
 apt-get install gnome-terminal xterm gcalctool
@@ -88,7 +97,7 @@ apt-get install gtk-chtheme gtk2-engines gtk2-engines-murrine clearlooks-phenix-
 apt-get install im-config fcitx fcitx-tools fcitx-pinyin
 
 # www-browser and mail-client
-apt-get install iceweasel icedove
+apt-get install iceweasel mozplugger icedove
 apt-get install flashplugin-nonfree
 
 # file browser/manager
@@ -124,9 +133,8 @@ apt-get install blueman
 apt-get install lxde
 apt-get purge lxterminal xarchiver leafpad gpicview lxmusic
 
-# need by lxde-logout for supporting suspend/hibernate
-# but hal conflicts with xserver-xorg
-aptitude install hal
+# abstract hw layer
+apt-get install hal
 
 # X utils
 apt-get install vbetools xscreensaver x11-apps
@@ -142,7 +150,12 @@ easy_install vim-bridge
 apt-get install sg3-utils lsscsi
 
 # serial
-apt-get install ckermit setserial
+apt-get install ckermit setserial lrzsz minicom
+
+# development
+apt-get install d-feet
+apt-get install intltool pkg-config
+
 
 # development utils and libraries (android or ...)
 apt-get install sun-java6-jdk
@@ -152,8 +165,11 @@ aptitude install lib32readline5-dev  # have dependency problem, so use aptitude
 apt-get install schedtool git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev libc6-dev lib32ncurses5-dev ia32-libs x11proto-core-dev libx11-dev lib32readline5-dev lib32z-dev libgl1-mesa-dev g++-multilib mingw32 tofrodos python-markdown libxml2-utils xsltproc
 
 # wine
-apt-get install wine-bin wine-utils libwine libwine-alsa libwine-gl libwine-gecko-1.4
+apt-get install wine-bin wine-utils libwine libwine-alsa libwine-gl libwine-gecko-1.4 winetricks
 apt-get install lib32nss-mdns    # for wine to connect internet
+
+# ms fonts
+apt-get cabextract p7zip ttf-mscorefonts-installer
 
 # file share
 apt-get install samba
@@ -176,7 +192,11 @@ apt-get install unix2dos
 apt-get install mesa-utils glew-utils
 
 # office
-apt-get install evince libreoffice
+apt-get install evince libreoffice libreoffice-gtk libreoffice-gtk3
+apt-get install chmsee
+
+# remote control
+apt-get install grdesktop
 
 echo -e "\n\n###############################################################################"
 echo -e "Everything finished, go bringup your configs of vim/zsh/iceweasel"

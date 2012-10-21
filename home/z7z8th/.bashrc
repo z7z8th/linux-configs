@@ -119,11 +119,11 @@ export LESS_TERMCAP_so=$'\E[5;0;40;1;32m'  # begin standout-mode - info box
 export LESS_TERMCAP_ue=$'\E[0m'            # end underline
 export LESS_TERMCAP_us=$'\E[4;5;1;34m'     # begin underline
 
-alias apts='apt-cache search'
-alias apti='apt-get install'
-alias aptu='apt-get update'
-
 [ -f "$HOME/.bash_PS1" ] && . $HOME/.bash_PS1
+
+export PATH=$PATH:/sbin:/usr/sbin:/usr/local/sbin
+
+
 #!/bin/sh -
 
 [ -z "$HOME" -o ! -e "$HOME" ] && { echo "HOME variable not set correctly. exiting..."; exit 1; }

@@ -1,0 +1,39 @@
+# See the README file in the source tree for notes and documentation
+
+connect "/usr/sbin/chat -ev -f /etc/chatscripts/barry-unicom.chat"
+pty "/usr/sbin/pppob"
+
+#debug
+
+noauth
+user ""
+password ""
+
+defaultroute
+#usepeerdns
+
+noipdefault
+nodetach
+nodeflate
+nobsdcomp
+noaccomp
+nocrtscts
+nopcomp
+nomagic
+#novj
+
+nomultilink
+ipcp-restart 7
+ipcp-accept-local
+ipcp-accept-remote
+ipcp-max-configure 999
+ipcp-max-failure   999
+ipcp-max-terminate 7
+
+lcp-echo-interval 2
+lcp-echo-failure 999
+
+passive
+mtu 1492
+
+refuse-chap
