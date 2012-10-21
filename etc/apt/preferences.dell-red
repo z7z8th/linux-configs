@@ -27,6 +27,6 @@ Package: libgl1-mesa-dri
 Pin: release n=squeeze-backports
 Pin-Priority: 990
 
-Package: fglrx-driver
+Package: fglrx-driver *fglrx*
 Pin: release n=squeeze-backports
 Pin-Priority: 990

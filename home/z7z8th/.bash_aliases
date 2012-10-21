@@ -20,5 +20,8 @@ alias apti='apt-get install'
 alias aptbi='apt-get -t squeeze-backports install'
 alias aptei='apt-get -t experimental install'
 alias aptu='apt-get update'
+alias aptdg='apt-get dist-upgrade'
+
 alias apts='apt-cache search'
 alias aptsh='apt-cache show'
+alias aptpl='apt-cache policy'
