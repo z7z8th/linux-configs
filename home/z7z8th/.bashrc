@@ -138,3 +138,6 @@ export PYTHONPATH=$python_user_site_packages_dir
 #python setup.py install --prefix $python_user_dir
 #cd ..
 
+source ~/perl5/perlbrew/etc/bashrc
+
+export MAKEFLAGS='-j4'

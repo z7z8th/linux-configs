@@ -9,6 +9,7 @@
 	cm = commit
 	cmam = commit -am
 	st = status
+    sh = show
     di = diff
     ldi = diff HEAD^
     rst = reset
