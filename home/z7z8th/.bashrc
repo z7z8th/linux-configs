@@ -123,21 +123,6 @@ export LESS_TERMCAP_us=$'\E[4;5;1;34m'     # begin underline
 
 export PATH=$PATH:/sbin:/usr/sbin:/usr/local/sbin
 
-
-#!/bin/sh -
-
-[ -z "$HOME" -o ! -e "$HOME" ] && { echo "HOME variable not set correctly. exiting..."; exit 1; }
-python_user_dir=$HOME/python
-python_user_site_packages_dir=$python_user_dir/lib/python2.6/site-packages
-mkdir -p $python_user_site_packages_dir
-export PATH=$PATH:$python_user_dir/bin
-export PYTHONPATH=$python_user_site_packages_dir
-
-#set -x
-#cd gitosis
-#python setup.py install --prefix $python_user_dir
-#cd ..
-
 #source ~/perl5/perlbrew/etc/bashrc
 
 export MAKEFLAGS='-j4'
