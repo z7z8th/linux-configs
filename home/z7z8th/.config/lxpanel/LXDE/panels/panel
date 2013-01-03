@@ -79,11 +79,34 @@ Plugin {
 }
 
 Plugin {
+    type = space
+    Config {
+        Size=2
+    }
+}
+
+Plugin {
     type = cpu
 }
 
 Plugin {
     type = tray
+}
+
+Plugin {
+    type = batt
+    Config {
+        HideIfNoBattery=0
+        AlarmCommand=xmessage Battery low
+        AlarmTime=15
+        BackgroundColor=black
+        BorderWidth=3
+        ChargingColor1=#28f200
+        ChargingColor2=#22cc00
+        DischargingColor1=#ffee00
+        DischargingColor2=#d9ca00
+        Size=12
+    }
 }
 
 Plugin {
