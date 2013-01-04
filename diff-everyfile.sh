@@ -6,7 +6,7 @@ for h in `echo $hostlist`; do
 done
 h=
 
-find etc -type f | 
+find etc home usr -type f | 
 while read line; do
     remote_file=$line
     local_file=/$line
