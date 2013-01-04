@@ -14,15 +14,9 @@ Package: *
 Pin: release a=unstable
 Pin-Priority: 400
 
-
-Package: *icedove* *iceowl* xul-ext* calendar-timezones
+Package: *iceweasel* xulrunner* libmozjs*
 Pin: release n=experimental
 Pin-Priority: 999
-
-Package: *iceweasel*
-Pin: release n=experimental
-Pin-Priority: 999
-
 
 Package: lib32readline5*
 Pin: release a=stable
