@@ -4,6 +4,9 @@
 	<entry name="font" mtime="1343436322" type="string">
 		<stringvalue>Droid Sans Mono 10</stringvalue>
 	</entry>
+	<entry name="scrollbar_position" mtime="1357110033" type="string">
+		<stringvalue>left</stringvalue>
+	</entry>
 	<entry name="title_mode" mtime="1343436322" type="string">
 		<stringvalue>after</stringvalue>
 	</entry>

@@ -6,6 +6,227 @@
 # im
 172.31.42.40        szfs
 172.31.42.220       szftp
+172.31.39.2         webs
+172.31.39.8         gitweb
+172.31.39.9         twbld
+
+
+#google ips
+#74.125.128.94
+#74.125.31.94
+#74.125.128.18
+#203.208.47.2
+203.208.46.200
+
+#			google proxy base address
+203.208.46.200			www.google.com
+203.208.46.200			www.google.cn
+203.208.46.200			google.cn
+203.208.46.200			g.cn
+203.208.46.200			www.google.com.cn
+
+#misc			google
+203.208.46.200			dl-ssl.google.com
+203.208.46.200			xmpp.l.google.com
+203.208.46.200			alt1.xmpp.l.google.com
+203.208.46.200			alt2.xmpp.l.google.com
+203.208.46.200			play.google.com
+203.208.46.200			checkout.google.com
+203.208.46.200			alex-sol.appspot.com
+203.208.46.200			alex-zro-hrd.appspot.com
+203.208.45.208			goo.gl
+203.208.46.200			developers.google.com
+203.208.46.200			developer.android.com
+203.208.46.200			source.android.com
+203.208.45.208			android.clients.google.com
+203.208.46.200			mtalk.google.com
+#203.208.46.200			goo.gl
+203.208.46.200			blogspot.com
+#
+#
+#Google			Plus	Game
+203.208.46.200			ssl.gstatic.com
+203.208.46.200			gg.google.com
+203.208.46.200			sandbox.google.com
+203.208.46.200			safebrowsing-cache.google.com
+203.208.46.200			newsfeed-dot-latest-dot-rovio-ad-engine.appspot.com
+203.208.46.200			images-oz-opensocial.googleusercontent.com
+203.208.46.200			images-pos-opensocial.googleusercontent.com
+203.208.46.200			images-lso-opensocial.googleusercontent.com
+203.208.46.200			a-oz-opensocial.googleusercontent.com
+203.208.46.200			project-slingshot-gp.appspot.com
+203.208.46.200			oauth.googleusercontent.com
+203.208.46.200			ct-google.crimecitygame.com
+203.208.46.200			toolbarqueries.clients.google.com
+203.208.46.200			browsersync.google.com
+203.208.46.200			www-oz-opensocial.googleusercontent.com
+203.208.46.200			toolbarqueries.google.com.hk
+203.208.46.200			www-opensocial.googleusercontent.com
+203.208.46.200			ssl.google-analytics.com
+203.208.46.200			r2303.latest.project-slingshot-hr.appspot.com
+203.208.46.200			r3138-dot-latest-dot-project-slingshot-gp.appspot.com
+203.208.46.200			r3115-dot-latest-dot-project-slingshot-gp.appspot.com
+203.208.46.200			r3232-dot-latest-dot-project-slingshot-gp.appspot.com
+203.208.46.200			r3269-dot-latest-dot-project-slingshot-gp.appspot.com
+203.208.46.200			bt26mravu2qpe56n8gnmjnpv2inl84bf-a-oz-opensocial.googleusercontent.com
+203.208.46.200			8kubpeu8314p2efdd7jlv09an9i2ljdo-a-oz-opensocial.googleusercontent.com
+203.208.46.200			adstvca8k2ooaknjjmv89j22n9t676ve-a-oz-opensocial.googleusercontent.com
+203.208.46.200			ob7f2qc0i50kbjnc81vkhgmb5hsv7a8l-a-oz-opensocial.googleusercontent.com
+203.208.46.200			53rd6p0catml6vat6qra84rs0del836d-a-oz-opensocial.googleusercontent.com
+203.208.46.200			u807isd5egseeabjccgcns005p2miucq-a-oz-opensocial.googleusercontent.com
+203.208.46.200			r70rmsn4s0rhk6cehcbbcbfbs31pu0va-a-oz-opensocial.googleusercontent.com
+203.208.46.200			59cbv4l9s05pbaks9v77vc3mengeqors-a-oz-opensocial.googleusercontent.com
+203.208.46.200			i8brh95qor6r54nkl52hidj2ggcs4jgm-a-oz-opensocial.googleusercontent.com
+203.208.46.200			upt14k1i2veesusrda9nfotcrbp9d7p5-a-oz-opensocial.googleusercontent.com
+
+
+#Google
+203.208.46.200			drive.google.com
+203.208.46.200			0.drive.google.com
+203.208.46.200			1.drive.google.com
+203.208.46.200			2.drive.google.com
+203.208.46.200			3.drive.google.com
+203.208.46.200			4.drive.google.com
+203.208.46.200			5.drive.google.com
+203.208.46.200			6.drive.google.com
+203.208.46.200			kelvin-mirex-svn.googlecode.com
+203.208.46.200			smarthosts.googlecode.com
+203.208.46.200			google.com
+203.208.46.200			maps.google.com
+203.208.46.200			maps.google.cn
+203.208.46.200			maps.google.com.cn
+203.208.46.200			mts0.google.com
+203.208.46.200			mts1.google.com
+203.208.46.200			mts2.google.com
+203.208.46.200			mts3.google.com
+203.208.46.200			mts4.google.com
+203.208.46.200			mts5.google.com
+203.208.46.200			khms0.google.com
+203.208.46.200			khms1.google.com
+203.208.46.200			khms2.google.com
+203.208.46.200			khms3.google.com
+203.208.46.200			khms4.google.com
+203.208.46.200			khms5.google.com
+203.208.46.200			khms6.google.com
+203.208.46.200			ditu.google.com
+203.208.46.200			ditu.google.cn
+203.208.46.200			mail.google.com
+203.208.46.200			news.google.com
+209.85.225.109			imap.gmail.com
+209.85.225.109			gmail-imap.l.google.com
+203.208.46.200			code.google.com
+203.208.46.200			docs.google.com
+203.208.46.200            upload.docs.google.com
+203.208.46.200            large-uploads.l.google.com
+203.208.46.200			0.docs.google.com
+203.208.46.200			1.docs.google.com
+203.208.46.200			2.docs.google.com
+203.208.46.200			3.docs.google.com
+203.208.46.200			4.docs.google.com
+203.208.46.200			5.docs.google.com
+203.208.46.200			6.docs.google.com
+203.208.46.200			browserchannel-docs.l.google.com
+203.208.46.200			apis.google.com
+203.208.46.200			sites.google.com
+203.208.46.200			dl.google.com
+203.208.46.200			support.google.com
+203.208.46.200			ssl-dl.google.com
+203.208.46.200			groups.google.com group.google.com
+203.208.46.200			groups-china.l.google.com
+203.208.46.200			scholar.google.com
+203.208.46.200			www.googleapis.com
+203.208.46.200			ajax.googleapis.com
+203.208.46.200			appspot.com
+203.208.46.200			www.appspot.com
+203.208.46.200			appengine.google.com
+203.208.46.200			www.googlevideo.com
+203.208.46.200			www.blogger.com
+203.208.46.200			plus.url.google.com.hk
+203.208.46.200			www.google.com.hk
+203.208.46.200			translate.google.com
+203.208.46.200			translate.google.cn
+203.208.46.200			translate.google.com.hk
+203.208.46.200			translate.google.com.cn
+203.208.46.200			translate.googleusercontent.com
+203.208.46.200			wenda.google.com.hk
+203.208.46.200			gstatic.com
+203.208.46.200			maps.gstatic.com
+203.208.46.200			hostedtalkgadget.google.com
+203.208.46.200			webcache.googleusercontent.com
+203.208.46.200			mail-attachment.googleusercontent.com
+203.208.46.200			maps-api-ssl.google.com
+203.208.46.200			images1-focus-opensocial.googleusercontent.com
+203.208.46.200			images2-focus-opensocial.googleusercontent.com
+203.208.46.200			images3-focus-opensocial.googleusercontent.com
+203.208.46.200			encrypted.google.com
+203.208.46.200			encrypted-tbn0.google.com
+203.208.46.200			encrypted-tbn1.google.com
+203.208.46.200			encrypted-tbn2.google.com
+203.208.46.200			encrypted-tbn3.google.com
+203.208.46.200			encrypted-tbn4.google.com
+203.208.46.200			encrypted-tbn5.google.com
+203.208.46.200			chrome.google.com
+74.125.71.94			profiles.google.com
+74.125.71.94			plus.google.com
+74.125.71.94			plus.url.google.com
+74.125.71.94			plusone.google.com
+203.208.46.200			talkgadget.google.com
+203.208.46.200			hostedtalkgadget.google.com
+203.208.46.200			talkgadget.l.google.com
+203.208.46.200			chatenabled.mail.google.com
+203.208.46.200			picasaweb.google.com
+203.208.46.200			clients1.google.com
+203.208.46.200			clients2.google.com
+203.208.46.200			clients3.google.com
+203.208.46.200			clients4.google.com
+203.208.46.200			clients5.google.com
+203.208.46.200			clients6.google.com
+203.208.46.200			clients7.google.com
+203.208.46.200			clients1.googleusercontent.com
+203.208.46.200			clients2.googleusercontent.com
+203.208.46.200			clients3.googleusercontent.com
+203.208.46.200			clients4.googleusercontent.com
+203.208.46.200			clients5.googleusercontent.com
+203.208.46.200			clients6.googleusercontent.com
+203.208.46.200			clients7.googleusercontent.com
+203.208.46.200			lh1.ggpht.com
+203.208.46.200			lh2.ggpht.com
+203.208.46.200			lh3.ggpht.com
+203.208.46.200			lh4.ggpht.com
+203.208.46.200			lh5.ggpht.com
+203.208.46.200			lh6.ggpht.com
+203.208.46.200			lh6.googleusercontent.com
+203.208.46.200			lh5.googleusercontent.com
+203.208.46.200			lh4.googleusercontent.com
+203.208.46.200			lh3.googleusercontent.com
+203.208.46.200			lh2.googleusercontent.com
+203.208.46.200			lh1.googleusercontent.com
+203.208.46.200			s2.googleusercontent.com
+203.208.46.200			themes.googleusercontent.com
+203.208.46.200			spreadsheets.google.com
+203.208.46.133			mt0.google.com
+203.208.46.134			mt1.google.com
+203.208.46.135			khm1.google.com
+203.208.46.136			khm0.google.com
+203.208.46.200			writely-china.l.google.com
+203.208.46.200			writely.l.google.com
+203.208.46.200			spreadsheets.google.com
+203.208.46.200			spreadsheet.google.com
+203.208.46.200			images.google.com.hk
+203.208.46.200			images.google.com
+203.208.46.200			static.googleusercontent.com
+
+#
+216.194.70.6			shell.cjb.net
+
+# 
+216.194.70.6    shell.cjb.net 
+#dropbox
+184.73.171.217			dl-web.dropbox.com
+
+#122.228.243.22          dynamic.12306.cn
+#61.183.42.94            dynamic.12306.cn
+
 
 
 #start
@@ -118,215 +339,3 @@
 127.0.0.1			86get.joy.cn
 127.0.0.1			86log.joy.cn
 
-
-# now using: www.google.sg
-#74.125.128.94			googleproxy
-203.208.47.65			googleproxy
-
-#			google proxy base address
-googleproxy			www.google.com
-googleproxy			www.google.cn
-googleproxy			google.cn
-googleproxy			g.cn
-googleproxy			www.google.com.cn
-
-#misc			google
-googleproxy			dl-ssl.google.com
-googleproxy			xmpp.l.google.com
-googleproxy			alt1.xmpp.l.google.com
-googleproxy			alt2.xmpp.l.google.com
-googleproxy			play.google.com
-googleproxy			checkout.google.com
-googleproxy			alex-sol.appspot.com
-googleproxy			alex-zro-hrd.appspot.com
-203.208.45.208			goo.gl
-googleproxy			developers.google.com
-googleproxy			developer.android.com
-googleproxy			source.android.com
-203.208.45.208			android.clients.google.com
-googleproxy			mtalk.google.com
-#googleproxy			goo.gl
-googleproxy			blogspot.com
-#
-#
-#Google			Plus	Game
-googleproxy			ssl.gstatic.com
-googleproxy			gg.google.com
-googleproxy			sandbox.google.com
-googleproxy			safebrowsing-cache.google.com
-googleproxy			newsfeed-dot-latest-dot-rovio-ad-engine.appspot.com
-googleproxy			images-oz-opensocial.googleusercontent.com
-googleproxy			images-pos-opensocial.googleusercontent.com
-googleproxy			images-lso-opensocial.googleusercontent.com
-googleproxy			a-oz-opensocial.googleusercontent.com
-googleproxy			project-slingshot-gp.appspot.com
-googleproxy			oauth.googleusercontent.com
-googleproxy			ct-google.crimecitygame.com
-googleproxy			toolbarqueries.clients.google.com
-googleproxy			browsersync.google.com
-googleproxy			www-oz-opensocial.googleusercontent.com
-googleproxy			toolbarqueries.google.com.hk
-googleproxy			www-opensocial.googleusercontent.com
-googleproxy			ssl.google-analytics.com
-googleproxy			r2303.latest.project-slingshot-hr.appspot.com
-googleproxy			r3138-dot-latest-dot-project-slingshot-gp.appspot.com
-googleproxy			r3115-dot-latest-dot-project-slingshot-gp.appspot.com
-googleproxy			r3232-dot-latest-dot-project-slingshot-gp.appspot.com
-googleproxy			r3269-dot-latest-dot-project-slingshot-gp.appspot.com
-googleproxy			bt26mravu2qpe56n8gnmjnpv2inl84bf-a-oz-opensocial.googleusercontent.com
-googleproxy			8kubpeu8314p2efdd7jlv09an9i2ljdo-a-oz-opensocial.googleusercontent.com
-googleproxy			adstvca8k2ooaknjjmv89j22n9t676ve-a-oz-opensocial.googleusercontent.com
-googleproxy			ob7f2qc0i50kbjnc81vkhgmb5hsv7a8l-a-oz-opensocial.googleusercontent.com
-googleproxy			53rd6p0catml6vat6qra84rs0del836d-a-oz-opensocial.googleusercontent.com
-googleproxy			u807isd5egseeabjccgcns005p2miucq-a-oz-opensocial.googleusercontent.com
-googleproxy			r70rmsn4s0rhk6cehcbbcbfbs31pu0va-a-oz-opensocial.googleusercontent.com
-googleproxy			59cbv4l9s05pbaks9v77vc3mengeqors-a-oz-opensocial.googleusercontent.com
-googleproxy			i8brh95qor6r54nkl52hidj2ggcs4jgm-a-oz-opensocial.googleusercontent.com
-googleproxy			upt14k1i2veesusrda9nfotcrbp9d7p5-a-oz-opensocial.googleusercontent.com
-
-
-#Google
-googleproxy			drive.google.com
-googleproxy			0.drive.google.com
-googleproxy			1.drive.google.com
-googleproxy			2.drive.google.com
-googleproxy			3.drive.google.com
-googleproxy			4.drive.google.com
-googleproxy			5.drive.google.com
-googleproxy			6.drive.google.com
-googleproxy			kelvin-mirex-svn.googlecode.com
-googleproxy			google.com
-googleproxy			maps.google.com
-googleproxy			maps.google.cn
-googleproxy			maps.google.com.cn
-googleproxy			mts0.google.com
-googleproxy			mts1.google.com
-googleproxy			mts2.google.com
-googleproxy			mts3.google.com
-googleproxy			mts4.google.com
-googleproxy			mts5.google.com
-googleproxy			khms0.google.com
-googleproxy			khms1.google.com
-googleproxy			khms2.google.com
-googleproxy			khms3.google.com
-googleproxy			khms4.google.com
-googleproxy			khms5.google.com
-googleproxy			khms6.google.com
-googleproxy			ditu.google.com
-googleproxy			ditu.google.cn
-googleproxy			mail.google.com
-googleproxy			news.google.com
-209.85.225.109			imap.gmail.com
-209.85.225.109			gmail-imap.l.google.com
-googleproxy			code.google.com
-googleproxy			docs.google.com
-googleproxy            upload.docs.google.com
-googleproxy            large-uploads.l.google.com
-googleproxy			0.docs.google.com
-googleproxy			1.docs.google.com
-googleproxy			2.docs.google.com
-googleproxy			3.docs.google.com
-googleproxy			4.docs.google.com
-googleproxy			5.docs.google.com
-googleproxy			6.docs.google.com
-googleproxy			browserchannel-docs.l.google.com
-googleproxy			apis.google.com
-googleproxy			sites.google.com
-googleproxy			dl.google.com
-googleproxy			support.google.com
-googleproxy			ssl-dl.google.com
-googleproxy			groups.google.com group.google.com
-googleproxy			groups-china.l.google.com
-googleproxy			scholar.google.com
-googleproxy			www.googleapis.com
-googleproxy			ajax.googleapis.com
-googleproxy			appspot.com
-googleproxy			www.appspot.com
-googleproxy			appengine.google.com
-googleproxy			www.googlevideo.com
-googleproxy			www.blogger.com
-googleproxy			plus.url.google.com.hk
-googleproxy			www.google.com.hk
-googleproxy			translate.google.com
-googleproxy			translate.google.cn
-googleproxy			translate.google.com.hk
-googleproxy			translate.google.com.cn
-googleproxy			translate.googleusercontent.com
-googleproxy			wenda.google.com.hk
-googleproxy			gstatic.com
-googleproxy			maps.gstatic.com
-googleproxy			hostedtalkgadget.google.com
-googleproxy			webcache.googleusercontent.com
-googleproxy			mail-attachment.googleusercontent.com
-googleproxy			maps-api-ssl.google.com
-googleproxy			images1-focus-opensocial.googleusercontent.com
-googleproxy			images2-focus-opensocial.googleusercontent.com
-googleproxy			images3-focus-opensocial.googleusercontent.com
-googleproxy			encrypted.google.com
-googleproxy			encrypted-tbn0.google.com
-googleproxy			encrypted-tbn1.google.com
-googleproxy			encrypted-tbn2.google.com
-googleproxy			encrypted-tbn3.google.com
-googleproxy			encrypted-tbn4.google.com
-googleproxy			encrypted-tbn5.google.com
-googleproxy			chrome.google.com
-74.125.71.94			profiles.google.com
-74.125.71.94			plus.google.com
-74.125.71.94			plus.url.google.com
-74.125.71.94			plusone.google.com
-googleproxy			talkgadget.google.com
-googleproxy			hostedtalkgadget.google.com
-googleproxy			talkgadget.l.google.com
-googleproxy			chatenabled.mail.google.com
-googleproxy			picasaweb.google.com
-googleproxy			clients1.google.com
-googleproxy			clients2.google.com
-googleproxy			clients3.google.com
-googleproxy			clients4.google.com
-googleproxy			clients5.google.com
-googleproxy			clients6.google.com
-googleproxy			clients7.google.com
-googleproxy			clients1.googleusercontent.com
-googleproxy			clients2.googleusercontent.com
-googleproxy			clients3.googleusercontent.com
-googleproxy			clients4.googleusercontent.com
-googleproxy			clients5.googleusercontent.com
-googleproxy			clients6.googleusercontent.com
-googleproxy			clients7.googleusercontent.com
-googleproxy			lh1.ggpht.com
-googleproxy			lh2.ggpht.com
-googleproxy			lh3.ggpht.com
-googleproxy			lh4.ggpht.com
-googleproxy			lh5.ggpht.com
-googleproxy			lh6.ggpht.com
-googleproxy			lh6.googleusercontent.com
-googleproxy			lh5.googleusercontent.com
-googleproxy			lh4.googleusercontent.com
-googleproxy			lh3.googleusercontent.com
-googleproxy			lh2.googleusercontent.com
-googleproxy			lh1.googleusercontent.com
-googleproxy			s2.googleusercontent.com
-googleproxy			themes.googleusercontent.com
-googleproxy			spreadsheets.google.com
-203.208.46.133			mt0.google.com
-203.208.46.134			mt1.google.com
-203.208.46.135			khm1.google.com
-203.208.46.136			khm0.google.com
-googleproxy			writely-china.l.google.com
-googleproxy			writely.l.google.com
-googleproxy			spreadsheets.google.com
-googleproxy			spreadsheet.google.com
-googleproxy			images.google.com.hk
-googleproxy			images.google.com
-googleproxy			static.googleusercontent.com
-
-#
-216.194.70.6			shell.cjb.net
-
-# 
-216.194.70.6    shell.cjb.net 
-#dropbox
-184.73.171.217			dl-web.dropbox.com
-
-#122.228.243.22          dynamic.12306.cn
-#61.183.42.94            dynamic.12306.cn
