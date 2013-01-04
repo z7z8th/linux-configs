@@ -37,7 +37,7 @@
     <primaryMonitor></primaryMonitor>
   </placement>
   <theme>
-    <name>Clearlooks</name>
+    <name>Clearlooks-Phenix</name>
     <titleLayout>NSDLIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -266,6 +266,9 @@
     <keybind key="W-i">
       <action name="Iconify"/>
     </keybind>
+    <keybind key="C-A-i">
+      <action name="Iconify"/>
+    </keybind>
     <!-- Keybindings for windows -->
     <keybind key="A-F4">
       <action name="Close"/>
@@ -293,23 +296,26 @@
         <desktop>yes</desktop>
       </action>
     </keybind>
+    <keybind key="A-F1">
+      <action name="NextWindow" />
+    </keybind>
     <!-- Keybindings for running applications -->
     <keybind key="W-e">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>PCManFM</name>
+          <name>Nautilus</name>
         </startupnotify>
-        <command>pcmanfm</command>
+        <command>nautilus</command>
       </action>
     </keybind>
     <keybind key="C-A-e">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>PCManFM</name>
+          <name>Nautilus</name>
         </startupnotify>
-        <command>pcmanfm</command>
+        <command>nautilus</command>
       </action>
     </keybind>
     <!--keybindings for LXPanel -->
@@ -343,6 +349,16 @@
         <command>gcalctool</command>
       </action>
     </keybind>
+    <keybind key="W-z">
+      <action name="Execute">
+        <command>sh -c 'env WINEPREFIX="$HOME/.wine" wine "C:\\Program Files\\Source Insight 3\\insight3.exe"'</command>
+      </action>
+    </keybind>
+    <keybind key="C-A-z">
+      <action name="Execute">
+        <command>env WINEPREFIX="$HOME/.wine" wine "C:\\Program Files\\Source Insight 3\\insight3.exe"</command>
+      </action>
+    </keybind>
     <keybind key="W-f">
       <action name="Execute">
         <command>x-www-browser</command>
@@ -360,12 +376,12 @@
     </keybind>
     <keybind key="W-m">
       <action name="Execute">
-        <command>x-terminal-emulator -e mutt</command>
+        <command>sh -c 'x-terminal-emulator -T Mutt-$(ps --no-headers -C mutt | wc -l) -e mutt'</command>
       </action>
     </keybind>
     <keybind key="C-A-m">
       <action name="Execute">
-        <command>x-terminal-emulator -e mutt</command>
+        <command>sh -c 'x-terminal-emulator -T Mutt-$(ps --no-headers -C mutt | wc -l) -e mutt'</command>
       </action>
     </keybind>
     <keybind key="W-s">

@@ -24,4 +24,7 @@
 	unstage = reset HEAD --
 	last = log -1 HEAD
     lgp = log --format='format:%Cgreen%ai %Cred%h %Cgreen%cn  %Creset%s'
-
+[diff]
+    tool = meld
+[difftool]
+    prompt = yes

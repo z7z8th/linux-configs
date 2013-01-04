@@ -1,5 +1,6 @@
 set line /dev/ttyUSB0
 set speed 115200
+#set speed 921600
 set stop-bits 1
 set parity none
 set carrier-watch off
