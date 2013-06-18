@@ -2,8 +2,21 @@
 #synclient TapButton1=1
 #syndaemon -i 1 -d &
 
+XSESS_DBG_LOG=$HOME/tmp/gkd.log
+
+# must delay some time before start keyring components
+( sleep 4; /usr/bin/gnome-keyring-daemon --start --components=secrets,pkcs11 ) &
+#eval $(/usr/bin/gnome-keyring-daemon --start) &
+# You probably need to do this too:
+#export SSH_AUTH_SOCK
+#export GPG_AGENT_INFO
+#export GNOME_KEYRING_CONTROL
+#export GNOME_KEYRING_PID
+
 xhost +local:
 
 nohup python ~/github/goagent/local/proxy.py >/tmp/goagent.log &
 
 nohup ~/.dropbox-dist/dropboxd >/tmp/dropboxd.log &
+
+xscreensaver &
