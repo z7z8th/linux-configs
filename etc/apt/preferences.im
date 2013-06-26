@@ -14,10 +14,10 @@ Package: *
 Pin: release a=unstable
 Pin-Priority: 400
 
-Package: *iceweasel* xulrunner* libmozjs*
-Pin: release n=experimental
-Pin-Priority: 999
+#Package: iceweasel* libmozjs* xul*
+#Pin: release n=experimental
+#Pin-Priority: 999
 
-Package: lib32readline5*
-Pin: release a=stable
-Pin-Priority: 999
+#Package: blueman obex-data-server
+#Pin: release a=stable
+#Pin-Priority: 999

@@ -118,3 +118,7 @@ xterm*fontMenu*fontdefault*Label : Default
 !Xcursor.theme : Vanilla-DMZ
 Xcursor.theme : Adwaita
 
+
+!!!!!!!!!!!!! xpdf !!!!!!!!!!!!!!
+Xpdf.geometry       :1440x880
+Xpdf.initialZoom    :width

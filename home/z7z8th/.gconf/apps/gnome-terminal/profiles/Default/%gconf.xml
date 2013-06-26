@@ -1,14 +1,15 @@
 <?xml version="1.0"?>
 <gconf>
-	<entry name="default_show_menubar" mtime="1343436322" type="bool" value="false"/>
-	<entry name="font" mtime="1343436322" type="string">
+	<entry name="use_custom_default_size" mtime="1361768111" type="bool" value="false"/>
+	<entry name="default_show_menubar" mtime="1371716203" type="bool" value="false"/>
+	<entry name="font" mtime="1371716203" type="string">
 		<stringvalue>Droid Sans Mono 10</stringvalue>
 	</entry>
 	<entry name="scrollbar_position" mtime="1357110033" type="string">
 		<stringvalue>left</stringvalue>
 	</entry>
-	<entry name="title_mode" mtime="1343436322" type="string">
-		<stringvalue>after</stringvalue>
+	<entry name="title_mode" mtime="1359353292" type="string">
+		<stringvalue>replace</stringvalue>
 	</entry>
 	<entry name="scrollback_lines" mtime="1343436322" type="int" value="80000"/>
 	<entry name="use_theme_colors" mtime="1343436322" type="bool" value="false"/>

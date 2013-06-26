@@ -376,12 +376,12 @@
     </keybind>
     <keybind key="W-m">
       <action name="Execute">
-        <command>sh -c 'x-terminal-emulator -T Mutt-$(ps --no-headers -C mutt | wc -l) -e mutt'</command>
+        <command>sh -c 'x-terminal-emulator -title Mutt-$(ps --no-headers -C mutt | wc -l) -e mutt'</command>
       </action>
     </keybind>
     <keybind key="C-A-m">
       <action name="Execute">
-        <command>sh -c 'x-terminal-emulator -T Mutt-$(ps --no-headers -C mutt | wc -l) -e mutt'</command>
+        <command>sh -c 'x-terminal-emulator -title Mutt-$(ps --no-headers -C mutt | wc -l) -e mutt'</command>
       </action>
     </keybind>
     <keybind key="W-s">

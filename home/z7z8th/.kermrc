@@ -5,7 +5,8 @@ set stop-bits 1
 set parity none
 set carrier-watch off
 set handshake none
-set flow-control rts/cts
+#set flow-control rts/cts
+set flow-control none
 robust
 set file type bin
 set file name lit

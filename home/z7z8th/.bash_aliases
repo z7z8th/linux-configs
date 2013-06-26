@@ -26,3 +26,6 @@ alias apts='apt-cache search'
 alias aptpl='apt-cache policy'
 alias aptsh='apt-cache show'
 alias aptpl='apt-cache policy'
+
+alias em='emacs -nw'
+alias emacs='emacs -nw'

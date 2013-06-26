@@ -108,7 +108,7 @@ fi
 #    . /etc/bash_completion
 #fi
 
-export EDITOR=vim
+export EDITOR=emacs
 
 # Less Colors for Man Pages
 export LESS_TERMCAP_mb=$'\E[1;31m'         # begin blinking

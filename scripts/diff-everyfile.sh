@@ -6,7 +6,7 @@ for h in `echo $hostlist`; do
 done
 h=
 
-find etc home usr -type f | 
+find etc home usr -type f -a ! -name "*~" | 
 while read line; do
     remote_file=$line
     local_file=/$line
@@ -17,6 +17,7 @@ while read line; do
     done
     [ x$matchedhost != x -a x$matchedhost != x$hosttype ] && continue
     [ x$matchedhost = x$hosttype ] && local_file=${local_file%.${hosttype}}
+    echo "$local_file <--> $remote_file"
     diff $local_file $remote_file >/dev/null 2>&1 && continue
     gvim -f -d  $local_file $remote_file
     # while [ -n "`ps aux|grep -v 'grep.*gvim'|grep gvim`" ]; do
