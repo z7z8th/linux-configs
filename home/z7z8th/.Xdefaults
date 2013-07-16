@@ -73,12 +73,11 @@ URxvt*scrollstyle: rxvt
 ! font
 Xft.antialias:          true
 Xft.dpi:                96
-Xft.rgba:               rgb
+! rgba subpixel hinting (for LCDs), last setting is rgb
+Xft.rgba:               subpixel
 Xft.hinting:            true
+! hintslight | hintsmedium | hintsfull
 Xft.hintstyle:          hintfull
-xterm*faceName:         xft:Droid Sans Mono:pixelsize=13
-xterm*font:             xft:Droid Sans Mono:pixelsize=13:antialias=true:hinting=true
-xterm*boldFont:         xft:Droid Sans Mono:pixelsize=13:antialias=true:hinting=true:bold
 
 !XTerm
 
@@ -93,6 +92,9 @@ xterm.borderLess     : true
 xterm.cursorBlink    : true
 xterm*colorUL        : yellow
 xterm*colorBD        : white
+xterm*faceName:         xft:Droid Sans Mono:pixelsize=13
+xterm*font:             xft:Droid Sans Mono:pixelsize=13:antialias=true:hinting=true
+xterm*boldFont:         xft:Droid Sans Mono:pixelsize=13:antialias=true:hinting=true:bold
 
 !fix alt key input
 xterm*eightBitInput  : false
