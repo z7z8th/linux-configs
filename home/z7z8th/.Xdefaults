@@ -73,11 +73,11 @@ URxvt*scrollstyle: rxvt
 ! font
 Xft.antialias:          true
 Xft.dpi:                96
-! rgba subpixel hinting (for LCDs), last setting is rgb
-Xft.rgba:               subpixel
+! Type of subpixel antialiasing (none, rgb, bgr, vrgb or vbgr)
+Xft.rgba:               rgb
 Xft.hinting:            true
 ! hintslight | hintsmedium | hintsfull
-Xft.hintstyle:          hintfull
+Xft.hintstyle:          hintsfull
 
 !XTerm
 
