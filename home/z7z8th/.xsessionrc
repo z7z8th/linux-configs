@@ -15,8 +15,6 @@ XSESS_DBG_LOG=$HOME/tmp/gkd.log
 
 xhost +local:
 
-nohup python ~/github/goagent/local/proxy.py >/tmp/goagent.log &
+flock -xn /run/lock/goagent-$(whoami).lock  python ~/github/goagent/local/proxy.py >/dev/null 2>&1 &
 
-nohup ~/.dropbox-dist/dropboxd >/tmp/dropboxd.log &
-
-xscreensaver &
+~/.dropbox-dist/dropboxd >/dev/null 2>&1 &
