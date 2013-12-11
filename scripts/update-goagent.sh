@@ -1,6 +1,6 @@
 #!/bin/sh
 
-goagent_pid=`ps aux | grep 'python.*goagent.*proxy\.py$' 2>/dev/null | grep -v 'grep' | awk '{print $2}'`
+goagent_pid=`ps aux | grep 'python.*goagent.*proxy\.py' 2>/dev/null | grep -v 'grep' | awk '{print $2}'`
 goagent_log=/tmp/goagent.log
 
 echo "goagent_pid=$goagent_pid"
@@ -20,6 +20,7 @@ git branch -a
 git reset --hard HEAD
 echo "=== do git clean -df"
 git clean -df >/dev/null
+# git checkout -b 3.0 remotes/upstream/3.0
 echo "=== do git pull"
 git pull
 
@@ -39,7 +40,7 @@ GA_CONF=$GA_DIR_LOC/proxy.ini
 echo "=== change proxy config"
 read -p "input appid: " appid
 read -p "input passwd: " passwd
-sed -i -r -e "s|^(appid\\s*=).*$|\\1 $appid|" -e "s|^(password\\s*=).*$|\\1 $passwd|" $GA_CONF
+sed -i -r -e "s/^(appid\\s*=).*$/\\1 $appid/" -e "s/^(password\\s*=).*$/\\1 $passwd/" $GA_CONF
 
 echo ""
 read -p "****** start goagent ?? *****" pp
