@@ -11,8 +11,8 @@ set clearchannel off
 set protocol xmodem {} {} {sx -k %s} {sx -k %s} {rx %s} {rx %s}
 
 cd ~/smb/usb-dlr/
-#send ./ldr_app-1.1.12.img
-send ./ldr_app-usb2.0-retry-rel3.bin
+send ./ldr_app-1.1.12.img
+#send ./ldr_app-usb2.0-retry-rel3.bin
 
 
 #cd ~/tmp/

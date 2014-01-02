@@ -92,9 +92,9 @@ xterm.borderLess     : true
 xterm.cursorBlink    : true
 xterm*colorUL        : yellow
 xterm*colorBD        : white
-xterm*faceName:         xft:Droid Sans Mono:pixelsize=13
-xterm*font:             xft:Droid Sans Mono:pixelsize=13:antialias=true:hinting=true
-xterm*boldFont:         xft:Droid Sans Mono:pixelsize=13:antialias=true:hinting=true:bold
+xterm*faceName:         xft:Droid Sans Mono:pixelsize=14
+xterm*font:             xft:Droid Sans Mono:pixelsize=14:antialias=true:hinting=true
+xterm*boldFont:         xft:Droid Sans Mono:pixelsize=14:antialias=true:hinting=true:bold
 
 !fix alt key input
 xterm*eightBitInput  : false

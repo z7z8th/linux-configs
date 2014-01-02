@@ -20,6 +20,7 @@ chmod 755 $GA_EXEC
 nohup python $GA_EXEC > $goagent_log &
 
 echo "======================================"
+sleep 1
 ps aux | grep 'python.*goagent.*proxy\.py$' 2>/dev/null | grep -v grep 1>/dev/null 2>&1 \
     && echo "### succeed, start goagent" \
     || echo "*** error, start goagent"

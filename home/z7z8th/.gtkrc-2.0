@@ -1,3 +1,6 @@
+# -- THEME AUTO-WRITTEN DO NOT EDIT
+include "/usr/share/themes/Clearlooks-Phenix/gtk-2.0/gtkrc"
 
-gtk-theme-name = "Clearlooks"
-gtk-icon-theme-name = "gnome"
+include "/home/z7z8th/.gtkrc.mine"
+
+# -- THEME AUTO-WRITTEN DO NOT EDIT

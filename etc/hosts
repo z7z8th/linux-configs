@@ -11,143 +11,12 @@
 172.31.39.8         gitweb
 172.31.39.9         twbld
 
-#
-216.194.70.6			shell.cjb.net
-
-# 
-216.194.70.6    shell.cjb.net 
-#dropbox
-184.73.171.217			dl-web.dropbox.com
-
-#122.228.243.22          dynamic.12306.cn
-#61.183.42.94            dynamic.12306.cn
+203.208.46.200	android.googlesource.com
 
 
+#UPDATE:2013-07-07 21:01
 
-#start
-
-#Baidu
-127.0.0.1			a.baidu.com
-127.0.0.1			baidutv.baidu.com
-127.0.0.1			bar.baidu.com
-127.0.0.1			c.baidu.com
-127.0.0.1			cjhq.baidu.com
-127.0.0.1			cpro.baidu.com
-127.0.0.1			drmcmm.baidu.com
-127.0.0.1			eiv.baidu.com
-127.0.0.1			hc.baidu.com
-127.0.0.1			hm.baidu.com
-127.0.0.1			ma.baidu.com
-127.0.0.1			nsclick.baidu.com
-127.0.0.1			spcode.baidu.com
-127.0.0.1			tk.baidu.com
-127.0.0.1			union.baidu.com
-127.0.0.1			ucstat.baidu.com
-127.0.0.1			utk.baidu.com
-127.0.0.1			focusbaiduafp.allyes.com
-
-
-#Qiyi
-127.0.0.1			afp.qiyi.com
-127.0.0.1			focusbaiduafp.allyes.com
-
-
-#CNTV
-127.0.0.1			a.cctv.com
-127.0.0.1			a.cntv.cn
-127.0.0.1			ad.cctv.com
-127.0.0.1			d.cntv.cn
-127.0.0.1			adguanggao.eee114.com
-127.0.0.1			cctv.adsunion.com
-
-
-#Sina			Video
-127.0.0.1			dcads.sina.com.cn
-
-
-#pptv
-127.0.0.1			pp2.pptv.com
-
-
-#letv
-127.0.0.1			pro.letv.com
-
-
-#56
-127.0.0.1			acs.56.com
-127.0.0.1			acs.agent.56.com
-127.0.0.1			acs.agent.v-56.com
-127.0.0.1			bill.agent.56.com
-127.0.0.1			bill.agent.v-56.com
-127.0.0.1			stat.56.com
-127.0.0.1			stat2.corp.56.com
-127.0.0.1			union.56.com
-127.0.0.1			uvimage.56.com
-127.0.0.1			v16.56.com
-
-
-#6rooms
-127.0.0.1			pole.6rooms.com
-127.0.0.1			shrek.6.cn
-127.0.0.1			simba.6.cn
-127.0.0.1			union.6.cn
-
-
-#tudou
-127.0.0.1			adextensioncontrol.tudou.com
-127.0.0.1			iwstat.tudou.com
-127.0.0.1			nstat.tudou.com
-127.0.0.1			stats.tudou.com
-127.0.0.1			.p2v.tudou.com
-127.0.0.1			adplay.tudou.com
-127.0.0.1			adcontrol.tudou.com
-127.0.0.1			stat.tudou.com
-
-
-#ku6
-127.0.0.1			1.allyes.com.cn
-127.0.0.1			analytics.ku6.com
-127.0.0.1			gug.ku6cdn.com
-127.0.0.1			ku6.allyes.com
-127.0.0.1			ku6afp.allyes.com
-127.0.0.1			pq.stat.ku6.com
-127.0.0.1			st.vq.ku6.cn
-127.0.0.1			stat0.888.ku6.com
-127.0.0.1			stat1.888.ku6.com
-127.0.0.1			stat2.888.ku6.com
-127.0.0.1			stat3.888.ku6.com
-127.0.0.1			static.ku6.com
-127.0.0.1			v0.stat.ku6.com
-127.0.0.1			v1.stat.ku6.com
-127.0.0.1			v2.stat.ku6.com
-127.0.0.1			v3.stat.ku6.com
-
-
-#joy
-127.0.0.1			86file.megajoy.com
-127.0.0.1			86get.joy.cn
-127.0.0.1			86log.joy.cn
-
-
-#google ips
-#74.125.128.94
-#74.125.31.94
-#74.125.128.18
-#203.208.47.2
-203.208.46.200
-
-#			google proxy base address
-203.208.46.200			www.google.com
-203.208.46.200			www.google.cn
-203.208.46.200			google.cn
-203.208.46.200			g.cn
-203.208.46.200			www.google.com.cn
-
-# source
-203.208.46.200          android.googlesource.com
-203.208.46.200          gerrit.googlesource.com
-
-
+127.0.0.1	localhost
 #SmartHosts START
 
 #Google Services START
@@ -612,7 +481,6 @@
 203.208.46.200	earth-api-samples.googlecode.com
 203.208.46.200	gmaps-samples-flash.googlecode.com
 203.208.46.200	google-code-feed-gadget.googlecode.com
-203.208.46.200	git-core.googlecode.com
 
 203.208.46.200	blogsearch.google.cn
 203.208.46.200	ditu.google.cn
@@ -685,6 +553,69 @@
 #Google Services END
 
 
+#Facebook Start
+173.252.112.28	api-read.facebook.com
+173.252.112.28	api.facebook.com
+173.252.112.28	apps.facebook.com
+173.252.112.28	developers.facebook.com
+173.252.112.28	facebook.com
+173.252.112.28	graph.facebook.com
+173.252.112.28	orcart.facebook.com
+173.252.112.28	www.facebook.com
+173.252.112.28	zh-CN.facebook.com
+
+173.252.100.25	m.facebook.com
+
+61.213.189.98	b.static.ak.facebook.com
+61.213.189.120	b.static.ak.fbcdn.net
+66.220.145.63	bigzipfiles.facebook.com
+61.213.189.113	creative.ak.fbcdn.net
+66.152.103.74	external.ak.fbcdn.net
+
+#66.220.149.88	c.facebook.com
+#69.171.227.26	chat.facebook.com
+#66.220.147.96	check4.facebook.com
+#184.31.111.139	connect.facebook.net
+#69.171.227.19	creativeupload.facebook.com
+#69.171.240.99	d.facebook.com
+#66.220.149.90	error.facebook.com
+#61.213.189.113	fbcdn.net
+#64.213.102.26	fbcdn-profile-a.akamaihd.net
+#173.223.232.67	fbcdn-sphotos-a.akamaihd.net
+#66.220.151.33	hphotos-ak-snc1.facebook.com
+#66.220.151.33	hphotos-ak-snc3.facebook.com
+#69.171.240.10	hphotos-ash4.fbcdn.net
+#69.63.183.200	hphotos-pao1.fbcdn.net
+#66.220.151.33	hphotos-snc1.fbcdn.net
+#66.220.151.32	hphotos-snc3.fbcdn.net
+#66.220.151.22	hphotos-snc6.fbcdn.net
+#69.171.227.24	hphotos-snc7.fbcdn.net
+#66.220.144.43	ldap.thefacebook.com
+#66.220.149.96	o.facebook.com
+#69.171.245.18	photos-ak-ash1.facebook.com
+#69.171.245.18	photos-ash1.facebook.com
+#66.220.149.90	pixel.facebook.com
+#118.214.190.105	profile.ak.facebook.com
+#61.213.189.114	profile.ak.fbcdn.net
+#69.171.247.22	s-static.facebook.com
+#61.213.189.113	s-hprofile-sf2p.fbcdn.net
+#184.26.194.110	s-static.ak.facebook.com
+#23.5.157.177	s-static.ak.fbcdn.net
+#69.171.227.30	secure-media.facebook.com
+#69.171.227.30	secure-media.fbcdn.net
+#66.220.149.96	ssl.facebook.com
+#69.171.247.38	ssl.connect.facebook.com
+#69.63.189.76	star.facebook.com
+#61.213.189.98	static.ak.facebook.com
+#65.32.34.136	static.ak.fbcdn.net
+#69.171.229.17	upload.facebook.com
+#66.220.144.41	vpn.tfbnw.net
+#120.29.145.50	vthumb.ak.fbcdn.net
+#66.220.151.31	vupload.facebook.com
+#69.171.225.31	www.connect.facebook.com
+#Facebook End
+
+
 #Flickr START
 98.136.43.76	geo.yahoo.com
 68.142.250.161	l.yimg.com
@@ -728,9 +659,9 @@
 #Flickr END
 
 #Twitter START
-199.16.156.18	twitter.com
-199.16.156.18	mobile.twitter.com
-199.16.156.18	api.twitter.com
+199.59.150.141	twitter.com
+#199.59.150.141	mobile.twitter.com
+199.59.150.142	api.twitter.com
 
 199.16.156.47	pic.twitter.com
 199.59.148.136	stream.twitter.com
@@ -795,6 +726,23 @@
 208.94.0.61	www.yfrog.com
 #Twitter END
 
+#Adobe Activation START
+0.0.0.0	3dns-2.adobe.com
+0.0.0.0	3dns-3.adobe.com
+0.0.0.0	activate.adobe.com
+0.0.0.0	activate-sea.adobe.com
+0.0.0.0	activate-sjc0.adobe.com
+0.0.0.0	adobe-dns.adobe.com
+0.0.0.0	adobe-dns-2.adobe.com
+0.0.0.0	adobe-dns-3.adobe.com
+0.0.0.0	ereg.adobe.com
+0.0.0.0	hl2rcv.adobe.com
+0.0.0.0	practivate.adobe.com
+0.0.0.0	wip3.adobe.com
+0.0.0.0	activate.wip3.adobe.com
+0.0.0.0	ereg.wip3.adobe.com
+0.0.0.0	wwis-dubc1-vip60.adobe.com
+#Adobe Activation END
 
 #YouTube START
 203.208.46.206	accounts.youtube.com
@@ -811,18 +759,6 @@
 203.208.46.206	www.youtube.com
 203.208.46.206	ytimg.l.google.com
 #YouTube END
-
-#GitHub START
-204.232.175.78	documentcloud.github.com
-207.97.227.239	github.com
-204.232.175.94	gist.github.com
-107.20.136.254	help.github.com
-207.97.227.252	nodeload.github.com
-199.27.76.130	raw.github.com
-107.22.3.110	status.github.com
-204.232.175.78	training.github.com
-207.97.227.243	www.github.com
-#GitHub END
 
 #Feedly START
 173.194.79.141	feedly-beta.appspot.com

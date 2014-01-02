@@ -34,3 +34,4 @@
     prompt = yes
 [core]
     excludesfile = ~/.global-gitignore
+    tabwidth = 4

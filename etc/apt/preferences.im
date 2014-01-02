@@ -6,9 +6,9 @@ Package: *
 Pin: release a=stable-backports
 Pin-Priority: 800
 
-Package: *
-Pin: release n=squeeze-backports
-Pin-Priority: 800
+# Package: *
+# Pin: release n=squeeze-backports
+# Pin-Priority: 800
 
 Package: *
 Pin: release a=unstable

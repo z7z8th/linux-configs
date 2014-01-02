@@ -2,10 +2,10 @@
 #synclient TapButton1=1
 #syndaemon -i 1 -d &
 
-XSESS_DBG_LOG=$HOME/tmp/gkd.log
+# XSESS_DBG_LOG=$HOME/tmp/gkd.log
 
 # must delay some time before start keyring components
-( sleep 4; /usr/bin/gnome-keyring-daemon --start --components=secrets,pkcs11 ) &
+# ( sleep 4; exec /usr/bin/gnome-keyring-daemon --start --components=secrets,pkcs11 ) &
 #eval $(/usr/bin/gnome-keyring-daemon --start) &
 # You probably need to do this too:
 #export SSH_AUTH_SOCK
@@ -17,4 +17,3 @@ xhost +local:
 
 flock -xn /run/lock/goagent-$(whoami).lock  python ~/github/goagent/local/proxy.py >/dev/null 2>&1 &
 
-~/.dropbox-dist/dropboxd >/dev/null 2>&1 &
