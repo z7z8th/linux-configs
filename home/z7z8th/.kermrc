@@ -1,7 +1,10 @@
-set line /dev/ttyUSB0
+set line /dev/ttyACM0
+#set line /dev/ttyUSB0
 #set line /dev/ttyS1
+#
 set speed 115200
 #set speed 921600
+#
 set stop-bits 1
 set parity none
 set carrier-watch off
@@ -14,6 +17,8 @@ set file name lit
 set rec pack 1000
 set send pack 1000
 set window 5
+set exit on-disconnect on
+set terminal lf-display crlf
 set prompt "kermit> "
 #set protocol xmodem {rx -c} {rx -c -a} {sx -k %s} {sx -k -a %s} {rx -c} {rx -c}
 #set protocol ymodem rb {rb -a} {sb %s} {sb -a %s} rb rb

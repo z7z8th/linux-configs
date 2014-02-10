@@ -1,6 +1,6 @@
 #!/bin/sh
 
-GA_DIR=$HOME/github/goagent
+GA_DIR=$HOME/gitrepos/goagent
 GA_DIR_LOC=$GA_DIR/local
 GA_EXEC=$GA_DIR_LOC/proxy.py
 

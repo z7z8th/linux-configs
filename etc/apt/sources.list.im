@@ -8,8 +8,6 @@ deb [arch=amd64,i386] http://mirrors.ustc.edu.cn/debian testing-proposed-updates
 deb [arch=amd64,i386] http://mirrors.ustc.edu.cn/debian stable main contrib non-free
 deb [arch=amd64,i386] http://mirrors.ustc.edu.cn/debian stable-backports main contrib non-free
 deb [arch=amd64,i386] http://mirrors.ustc.edu.cn/debian stable-updates main contrib non-free
-deb [arch=amd64,i386] http://mirrors.ustc.edu.cn/debian squeeze-proposed-updates main contrib non-free
-deb [arch=amd64,i386] http://mirrors.ustc.edu.cn/debian-backports squeeze-backports main contrib non-free
 
 deb [arch=amd64,i386] http://mirrors.ustc.edu.cn/debian unstable main contrib non-free
 deb [arch=amd64,i386] http://mirrors.ustc.edu.cn/debian experimental main contrib non-free
@@ -23,3 +21,8 @@ deb [arch=amd64,i386] http://mirrors.ustc.edu.cn/debian-multimedia testing main 
 deb-src [arch=amd64,i386] http://mirrors.ustc.edu.cn/debian testing main contrib non-free
 deb-src [arch=amd64,i386] http://mirrors.ustc.edu.cn/debian stable main contrib non-free
 deb-src [arch=amd64,i386] http://mirrors.ustc.edu.cn/debian unstable main contrib non-free
+
+###### deprecated
+
+#deb [arch=amd64,i386] http://mirrors.ustc.edu.cn/debian squeeze-proposed-updates main contrib non-free
+#deb [arch=amd64,i386] http://mirrors.ustc.edu.cn/debian-backports squeeze-backports main contrib non-free
