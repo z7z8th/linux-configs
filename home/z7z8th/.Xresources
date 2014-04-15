@@ -72,7 +72,7 @@ URxvt*scrollstyle: rxvt
 
 ! font
 Xft.antialias:          true
-Xft.dpi:                96
+Xft.dpi:                120
 ! Type of subpixel antialiasing (none, rgb, bgr, vrgb or vbgr)
 Xft.rgba:               rgb
 Xft.hinting:            true
@@ -83,18 +83,18 @@ Xft.hintstyle:          hintsfull
 
 !look and feel
 xterm.termName       : xterm-256color
-xterm.geometry       : 80x36
-xterm*scrollBar      : false
-xterm*rightScrollBar : true
+xterm.geometry       : 120x64
+xterm*scrollBar      : true
+xterm*rightScrollBar : false
 xterm*loginshell     : true
 xterm*cursorBlink    : true
 xterm.borderLess     : true
 xterm.cursorBlink    : true
 xterm*colorUL        : yellow
 xterm*colorBD        : white
-xterm*faceName:         xft:Droid Sans Mono:pixelsize=14
-xterm*font:             xft:Droid Sans Mono:pixelsize=14:antialias=true:hinting=true
-xterm*boldFont:         xft:Droid Sans Mono:pixelsize=14:antialias=true:hinting=true:bold
+xterm*faceName       : xft:Droid Sans Mono:pixelsize=14
+xterm*font           : xft:Droid Sans Mono:pixelsize=14:antialias=true:hinting=true
+xterm*boldFont       : xft:Droid Sans Mono:pixelsize=14:antialias=true:hinting=true:bold
 
 !fix alt key input
 xterm*eightBitInput  : false
@@ -105,9 +105,9 @@ XTerm*fastScroll     : true
 
 !mouse selecting to copy, ctrl-v to paste
 !Ctrl p to print screen content to file
-XTerm*VT100.Translations : #override \
-   Ctrl <KeyPress> V     : insert-selection(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\
-   <BtnUp>               : select-end(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n
+!XTerm*VT100.Translations : #override \
+!   Ctrl <KeyPress> V     : insert-selection(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n\
+!   <BtnUp>               : select-end(CLIPBOARD,PRIMARY,CUT_BUFFER0) \n
 !   Ctrl <KeyPress> P     : print() \n
 
 !font and locale
