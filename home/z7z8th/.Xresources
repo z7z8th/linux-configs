@@ -76,8 +76,8 @@ Xft.dpi:                120
 ! Type of subpixel antialiasing (none, rgb, bgr, vrgb or vbgr)
 Xft.rgba:               rgb
 Xft.hinting:            true
-! hintslight | hintsmedium | hintsfull
-Xft.hintstyle:          hintsfull
+! hintlight | hintmedium | hintfull
+Xft.hintstyle:          hintfull
 
 !XTerm
 

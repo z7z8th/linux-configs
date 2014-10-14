@@ -1,6 +1,6 @@
 # touchpad
-#synclient TapButton1=1
-#syndaemon -i 1 -d &
+# synclient TapButton1=1
+# syndaemon -k -i 1 -d -t -R&
 
 # XSESS_DBG_LOG=$HOME/tmp/gkd.log
 

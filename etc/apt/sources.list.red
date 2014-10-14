@@ -19,6 +19,6 @@ deb [arch=amd64,i386] http://mirrors.ustc.edu.cn/debian-security stable/updates 
 deb [arch=amd64,i386] http://mirrors.ustc.edu.cn/debian-multimedia testing main non-free
 ##########
 
-deb-src [arch=amd64,i386] http://mirrors.ustc.edu.cn/debian testing main contrib non-free
-deb-src [arch=amd64,i386] http://mirrors.ustc.edu.cn/debian stable main contrib non-free
-deb-src [arch=amd64,i386] http://mirrors.ustc.edu.cn/debian unstable main contrib non-free
+#deb-src [arch=amd64,i386] http://mirrors.ustc.edu.cn/debian testing main contrib non-free
+#deb-src [arch=amd64,i386] http://mirrors.ustc.edu.cn/debian stable main contrib non-free
+#deb-src [arch=amd64,i386] http://mirrors.ustc.edu.cn/debian unstable main contrib non-free
