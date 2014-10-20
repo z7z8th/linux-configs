@@ -17,7 +17,7 @@ echo "goagent_log=$goagent_log"
 read -p "****** start goagent ?? *****" pp
 echo "nohup python $GA_EXEC > $goagent_log &"
 chmod 755 $GA_EXEC
-nohup python $GA_EXEC > $goagent_log &
+nohup python $GA_EXEC 2>&1 > $goagent_log &
 
 echo "======================================"
 sleep 1
