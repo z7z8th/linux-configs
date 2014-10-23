@@ -1,0 +1,23 @@
+WARNING - [Sep 13 10:28:30] please install *libnss3-tools* package to import GoAgent root ca
+------------------------------------------------------
+GoAgent Version    : 3.0.5 (python/2.7.5 gevent/1.0dev pyopenssl/0.13)
+Listen Address     : 127.0.0.1:8087
+GAE Mode           : https
+GAE Profile        : google_cn
+GAE APPID          : z7z8th-3|z7z8th-1|z7z8th-2
+Pac Server         : http://127.0.0.1:8086/proxy.pac
+Pac File           : file:///home/z7z8th/github/goagent/local/proxy.pac
+------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/z7z8th/github/goagent/local/proxy.py", line 2440, in <module>
+    main()
+  File "/home/z7z8th/github/goagent/local/proxy.py", line 2425, in main
+    server = LocalProxyServer((common.PAC_IP, common.PAC_PORT), PACServerHandler)
+  File "/usr/lib/python2.7/SocketServer.py", line 419, in __init__
+    self.server_bind()
+  File "/usr/lib/python2.7/SocketServer.py", line 430, in server_bind
+    self.socket.bind(self.server_address)
+  File "<string>", line 1, in bind
+socket.error: [Errno 98] Address already in use
+Exception KeyError: KeyError(38787024,) in <module 'threading' from '/usr/lib/python2.7/threading.pyc'> ignored
+Another instance of Dropbox (6172) is running!

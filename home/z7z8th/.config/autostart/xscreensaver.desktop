@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=xscreensaver
+Exec=/usr/bin/xscreensaver
+Comment=extensible screen saver framework, plus locking
