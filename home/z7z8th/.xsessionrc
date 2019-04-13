@@ -1,19 +1,11 @@
 # touchpad
+# ===
 # synclient TapButton1=1
 # syndaemon -k -i 1 -d -t -R&
 
 # XSESS_DBG_LOG=$HOME/tmp/gkd.log
 
-# must delay some time before start keyring components
-# ( sleep 4; exec /usr/bin/gnome-keyring-daemon --start --components=secrets,pkcs11 ) &
-#eval $(/usr/bin/gnome-keyring-daemon --start) &
-# You probably need to do this too:
-#export SSH_AUTH_SOCK
-#export GPG_AGENT_INFO
-#export GNOME_KEYRING_CONTROL
-#export GNOME_KEYRING_PID
-
 xhost +local:
 
-flock -xn /run/lock/goagent-$(whoami).lock  python ~/github/goagent/local/proxy.py >/dev/null 2>&1 &
+flock -xn /run/lock/app-$(whoami).lock  python path/to/app.py >/dev/null 2>&1 &
 

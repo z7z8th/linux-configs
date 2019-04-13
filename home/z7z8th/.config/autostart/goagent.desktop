@@ -1,5 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=GoAgent
-Exec=nohup python /home/z7z8th/gitrepos/goagent/local/proxy.py >/home/z7z8th/tmp/goagent.log
-Hidden=True

@@ -1,4 +1,0 @@
-[Desktop Entry]
-Name=dropboxd
-Exec=nohup /home/z7z8th/.dropbox-dist/dropboxd >/home/z7z8th/tmp/dropboxd.log
-Type=Application
