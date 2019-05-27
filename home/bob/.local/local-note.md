@@ -16,3 +16,15 @@ Gnome
 ===
 gsettings set org.gnome.desktop.session idle-delay 1200    # blank screen after 20 minutes idle
 gsettings set org.gnome.desktop.screensaver lock-delay 0    # lock immediately after blank
+
+Font DPI on GNOME 3.30: 1.1
+
+Extenions:
+* Dock to dash
+* No title bar
+* Hide top bar
+
+Disable extensions:
+* Native window placement
+
+
