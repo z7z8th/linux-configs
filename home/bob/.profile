@@ -21,10 +21,8 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-[ -d "$HOME/.local/bin" ] && PATH="$HOME/.local/bin:$PATH"
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.local/bin" ] ; then
+    PATH="$HOME/.local/bin:$PATH"
+fi
 
-export PATH
-
-# set pc beep speaker
-#xset b vol%   Hz   duration
- xset b 20    2000  10

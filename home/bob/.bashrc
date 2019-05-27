@@ -117,6 +117,7 @@ if ! shopt -oq posix; then
 fi
 
 export EDITOR=emacs
+export MAKEFLAGS='-j4'
 
 # Less Colors for Man Pages
 export LESS_TERMCAP_mb=$'\E[1;31m'         # begin blinking
@@ -127,12 +128,9 @@ export LESS_TERMCAP_so=$'\E[5;0;40;1;32m'  # begin standout-mode - info box
 export LESS_TERMCAP_ue=$'\E[0m'            # end underline
 export LESS_TERMCAP_us=$'\E[4;5;1;34m'     # begin underline
 
-[ -f "$HOME/.bash_PS1" ] && . $HOME/.bash_PS1
-
 export PATH=$HOME/.local/bin:$HOME/bin:/sbin:/usr/sbin:/usr/local/sbin:$PATH
 
-export MAKEFLAGS='-j4'
-
+. ~/.bash/bash_ssh_env
 . ~/.bash/git-completion.bash
 . ~/.bash/git-prompt.sh
 

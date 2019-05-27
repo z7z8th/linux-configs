@@ -3,8 +3,11 @@
 LOCAL_TMP_DIR=$HOME/tmp
 mkdir -p $LOCAL_TMP_DIR
 
+# set pc beep speaker
+#xset b vol%   Hz   duration
+ xset b 20    2000  10
+
 # touchpad
-# ===
 synclient TapButton1=1
 syndaemon -k -i 1 -d -t -R&
 
