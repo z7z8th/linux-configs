@@ -1,9 +1,0 @@
-[Desktop Entry]
-Encoding=UTF-8
-Version=1.0
-Type=Application
-NoDisplay=true
-Exec=/home/xiaobai/.local/lib/firefox/firefox-bin %u
-Name=Firefox Developer Edition
-Comment=Custom definition for Firefox Developer Edition
-Icon=/home/xiaobai/.local/lib/firefox/browser/chrome/icons/default/default64.png

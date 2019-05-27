@@ -4,201 +4,89 @@
 dpkg-reconfigure tzdata
 
 # remove not needed pkgs
-apt-get purge live-boot* live-config*
+apt purge live-boot* live-config*
 
 # git to get configs from github
-apt-get install git
+apt install git git-doc ca-certificates
 
 echo -e "Update your /etc/apt/sources.list now, and Delete this line after you finished!"
 exit 0
 
-############################ BEGIN OF UPDATE BASE DEPENDENCY ########################
-###
-# install new kernel and firmware, remove old kernel
-apt-get install linux-image-amd64
-apt-get install firmware-linux-nonfree
-apt-get purge linux-image-2.6-*
-
-# cpu freq and acpi
-apt-get install cpufrequtils
-apt-get install acpi pm-utils acpitool acpi-support xapm xserver-xorg-video-apm
-
-# resouce monitor
-apt-get install htop iotop iftop nmon
-
-# sysv rc utils
-apt-get install sysv-rc-conf
-apt-get install chkconfig
-
-# kernel utils
-apt-get install kexec-tools
-apt-get install bootchart2
-apt-get install uswsusp
-
-# editor
-apt-get install vim vim-gtk vim-doc ctags cscope
-
-# shell
-apt-get install zsh
-
-# terminal utils
-apt-get install screen
-
-# python
-apt-get install python python-pip python-dev
-
-# archive utils
-apt-get install zip unzip xz-utils unrar bzip2 p7zip-full
-
-# internet utils
-apt-get install w3m w3m-img curl mtr axel 
-
-# background image of desktop and grub
-apt-get install desktop-base
-
-# disk utils
-apt-get install gdisk gparted
-
-# trace tools, for debug
-apt-get install strace
-apt-get install ltrace
-
-# text process
-apt-get install gawk
+########### SYSTEM ###########
+apt install linux-image-amd64 firmware-linux firmware-misc-nonfree
+#apt install sysv-rc-conf chkconfig    # sysv rc utils
+#apt install kexec-tools bootchart2 uswsusp    # kernel utils
+apt install cpufrequtils linux-cpupower dmidecode smartmontools memtest86+ lm-sensors ntpd ntpdate
+# apt install acpi pm-utils acpitool acpi-support xapm xserver-xorg-video-apm
+apt install htop iotop iftop nmon
+apt install vim vim-gtk3 vim-doc ctags cscope
+apt install zsh screen
+apt install python python-pip python-dev python3-pip
+apt install zip unzip xz-utils unrar bzip2 p7zip-full cabextract p7zip 
+apt install w3m w3m-img curl axel
+apt install dig nslookup telnet nmap mtrdnsutils
+apt install desktop-base gdisk gparted
+apt install strace ltrace gawk
 
 # text Mail
-apt-get install mutt notmuch-mutt mutt-patched mutt-vc-query abook
-apt-get install getmail4 procmail mailcheck
+#apt install mutt notmuch-mutt mutt-patched mutt-vc-query abook
+#apt install getmail4 procmail mailcheck
 
-# /usr/bin/notify-send, for new mail notification
-apt-get install libnotify-bin
+apt install libnotify-bin    # /usr/bin/notify-send, for new mail notification
 
 
-###
-############################ END OF UPDATE BASE DEPENDENCY ########################
+########### /SYSTEM ###########
 
 read -p "Install X Windows Environment? Not a Server? Ctrl-C to Quit!"
 
-############################ BEGIN OF X ENVIRONMENT ###############################
-###
-# fonts
-apt-get install ttf-wqy-* xfonts-wqy unifont fonts-droid gsfonts
+########### DESKTOP ###########
+apt install gnome gnome-shell gdm3
+apt install fonts-dejavu* fonts-noto-cjk fonts-noto-cjk-extra
+#apt install qbittorrent chromium nautilus nautilus-open-terminal pidgin file-roller
+#apt install evince libreoffice libreoffice-gtk libreoffice-gtk3 chmsee # office
+apt install im-config fcitx-full fcitx-tools fcitx-pinyin
+apt install alsamixergui alsa-utils libasound2-plugins pulseaudio    # audio and video
+apt install gimp mirage scrot    # photos
+apt install blueman    # bluetooth gui utils
+apt install foomatic-db-compressed-ppds printer-driver-hpijs cups
+apt install grdesktop remmina    # remote desktop control
+########### /DESKTOP ###########
 
-# xserver
-apt-get install xserver-xorg-core gdm xdm xserver-xorg-video-intel xserver-xorg-input-all
+########### DEVELOPMENT ###########
+apt install sg3-utils lsscsi    # scsi
+apt install ckermit setserial lrzsz minicom    # serial
+apt install d-feet intltool pkg-config
+apt install g++ gdb gdb-doc libstdc++6-6-dbg libc6-dbg
 
-# accessories
-apt-get install gnome-terminal xterm gcalctool
-
-# theme and backgrounds
-apt-get install gtk-chtheme gtk2-engines gtk2-engines-murrine clearlooks-phenix-theme gnome-themes gnome-themes-extras gnome-backgrounds
-
-# input method
-apt-get install im-config fcitx fcitx-tools fcitx-pinyin
-
-# www-browser and mail-client
-apt-get install iceweasel mozplugger icedove
-apt-get install flashplugin-nonfree
-
-# file browser/manager
-## apt-cache search nautilus plugin
-apt-get install nautilus nautilus-open-terminal
-
-# sound and video
-apt-get install alsamixergui alsa-utils libasound2-plugins pulseaudio
-apt-get install mplayer2 smplayer
-
-# graphics
-apt-get install mirage gimp scrot
-
-# instant messager
-apt-get install pidgin
-### skype
-### i386
-# wget -O skype-install.deb http://www.skype.com/go/getskype-linux-deb
-# dpkg -i skype-install.deb
-### x86_64
-# wget -O skype-install.deb http://www.skype.com/go/getskype-linux-deb-64
-# dpkg -i skype-install.deb
-### skype need ia32-libs-gtk, the cmd below fix it
-# apt-get install -f
-
-# archive manager
-apt-get install file-roller
-
-# bluetooth gui utils
-apt-get install blueman
-
-# desktop environment
-apt-get install lxde
-apt-get purge lxterminal xarchiver leafpad gpicview lxmusic
-
-# abstract hw layer
-apt-get install hal
-
-# X utils
-apt-get install vbetools xscreensaver x11-apps
-
-###
-############################ END OF X ENVIRONMENT ###############################
-
-# for vim plugins
-apt-get install ruby ruby-dev
-easy_install vim-bridge
-
-# scsi
-apt-get install sg3-utils lsscsi
-
-# serial
-apt-get install ckermit setserial lrzsz minicom
-
-# development
-apt-get install d-feet
-apt-get install intltool pkg-config
-
-
-# development utils and libraries (android or ...)
-apt-get install sun-java6-jdk
-apt-get purge openjdk*
-apt-get install make automake autoconf autotools-dev
+#### ANDROID ####
+apt install sun-java6-jdk
+apt purge openjdk*
+apt install make automake autoconf autotools-dev
 aptitude install lib32readline5-dev  # have dependency problem, so use aptitude
-apt-get install schedtool git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev libc6-dev lib32ncurses5-dev ia32-libs x11proto-core-dev libx11-dev lib32readline5-dev lib32z-dev libgl1-mesa-dev g++-multilib mingw32 tofrodos python-markdown libxml2-utils xsltproc
+apt install schedtool git-core gnupg flex bison gperf build-essential zip curl zlib1g-dev libc6-dev lib32ncurses5-dev ia32-libs x11proto-core-dev libx11-dev lib32readline5-dev lib32z-dev libgl1-mesa-dev g++-multilib mingw32 tofrodos python-markdown libxml2-utils xsltproc
+#### /ANDROID ####
 
-# wine
-apt-get install wine-bin wine-utils libwine libwine-alsa libwine-gl libwine-gecko-1.4 winetricks
-apt-get install lib32nss-mdns    # for wine to connect internet
+apt install wine64-bin wine64-tools libwine winetricks ttf-mscorefonts-installer lib32nss-mdns    # wine
+apt install samba bluez-hcidump bluez-utils
 
-# ms fonts
-apt-get cabextract p7zip ttf-mscorefonts-installer
+#### FFMPEG ####
+apt install ffmpeg libavresample libpng libpng12-0 librtmp
+apt install libavcodec-dev libavformat-dev libavutil-dev libavfilter-dev libswscale-dev libavresample-dev  libopenblas-dev libpng-dev libpng12-dev
+apt install mediainfo mediainfo-gui
 
-# file share
-apt-get install samba
+# build ffmpeg 4.1
+apt install doxygen doxygen-doc doxygen-gui nginx-doc graphviz
+apt install autoconf   automake   build-essential   cmake   git-core  pkg-config   texinfo   wget  libtool  zlib1g-dev libass-dev   libfreetype6-dev   libsdl2-dev     libva-dev   libvdpau-dev   libvorbis-dev   libxcb1-dev   libxcb-shm0-dev   libxcb-xfixes0-dev  libncursesw*
+apt install nasm yasm libx264-dev libx265-dev libnuma-dev libfdk-aac-dev libmp3lame-dev librtmp-dev
+apt install vdpauinfo libvdpau-doc
+apt install vlc v4l-utils
+#### /FFMPEG ####
 
-# yes, bluetooth and me
-apt-get install bluez-hcidump
-apt-get install bluez-utils
+apt install nginx nginx-full spawn-fcgi libnginx-mod-rtmp
+apt install mesa-utils glew-utils # graphics
+########### /DEVELOPMENT ###########
 
-# printer
-apt-get install foomatic-db-compressed-ppds printer-driver-hpijs cups
-
-# video tools, previously ffmpeg
-apt-get install libav-tools
-
-# i wanna get away from this
-apt-get install dos2unix
-apt-get install unix2dos
-
-# graphics
-apt-get install mesa-utils glew-utils
-
-# office
-apt-get install evince libreoffice libreoffice-gtk libreoffice-gtk3
-apt-get install chmsee
-
-# remote control
-apt-get install grdesktop
-
-echo -e "\n\n###############################################################################"
+echo -e "\n\n############################"
 echo -e "Everything finished, go bringup your configs of vim/zsh/iceweasel"
 
 

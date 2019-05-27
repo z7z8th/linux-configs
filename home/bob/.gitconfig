@@ -1,8 +1,9 @@
 [color]
 	ui = auto
 [user]
+	email = ybzhao1989@gmail.com
 	name = Bob Zhao
-	email = bob.zhao@infomax.com.tw
+
 [alias]
 	co = checkout
 	br = branch

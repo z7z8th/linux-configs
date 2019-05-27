@@ -1,0 +1,24 @@
+#!/bin/dash
+
+LOCAL_TMP_DIR=$HOME/tmp
+mkdir -p $LOCAL_TMP_DIR
+
+# touchpad
+# ===
+synclient TapButton1=1
+syndaemon -k -i 1 -d -t -R&
+
+# XSESS_DBG_LOG=$HOME/tmp/gkd.log
+
+xhost +local:
+
+run_app_exclusive() {
+	local app=$1
+	local name=${app}-$(whoami)
+	local log="${LOCAL_TMP_DIR}/${name}.log"
+	printf "\n=== Launch ${app} ===\n" >>${log}
+	flock -xn "/run/lock/${name}.lock" $@  >>${log} 2>&1 &
+}
+
+. ~/.xsessionrc-priv
+
