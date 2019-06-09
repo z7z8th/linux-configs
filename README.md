@@ -6,6 +6,7 @@ Linux config files, mainly Debian stable
 Time
 ===
 `ln -sfT /usr/share/zoneinfo/Asia/Hong_Kong /etc/localtime`
+
 `hwclock -w --local`
 
 
