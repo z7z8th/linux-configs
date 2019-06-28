@@ -41,6 +41,7 @@ read -p "Install X Windows Environment? Not a Server? Ctrl-C to Quit!"
 
 ########### DESKTOP ###########
 apt install gnome gnome-shell gdm3
+apt install synaptic gnome-shell-extension-autohidetopbar gnome-shell-extension-dashtodock gnome-shell-extension-system-monitor gnome-shell-extension-taskbar gnome-shell-extensions gnome-shell-extension-no-annoyance gnome-shell-extension-pixelsaver
 apt install fonts-dejavu* fonts-noto-cjk fonts-noto-cjk-extra
 #apt install qbittorrent chromium nautilus nautilus-open-terminal pidgin file-roller
 #apt install evince libreoffice libreoffice-gtk libreoffice-gtk3 chmsee # office
@@ -50,6 +51,8 @@ apt install gimp mirage scrot    # photos
 apt install blueman    # bluetooth gui utils
 apt install foomatic-db-compressed-ppds printer-driver-hpijs cups
 apt install grdesktop remmina    # remote desktop control
+apt install synaptic    # package manager
+
 ########### /DESKTOP ###########
 
 ########### DEVELOPMENT ###########
