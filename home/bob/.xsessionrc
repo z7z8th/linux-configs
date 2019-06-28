@@ -7,12 +7,6 @@ mkdir -p $LOCAL_TMP_DIR
 #xset b vol%   Hz   duration
  xset b 20    2000  10
 
-# touchpad
-synclient TapButton1=1
-syndaemon -k -i 1 -d -t -R&
-
-# XSESS_DBG_LOG=$HOME/tmp/gkd.log
-
 xhost +local:
 
 run_app_exclusive() {
@@ -22,6 +16,14 @@ run_app_exclusive() {
 	printf "\n=== Launch ${app} ===\n" >>${log}
 	flock -xn "/run/lock/${name}.lock" $@  >>${log} 2>&1 &
 }
+
+# Touchpad
+# TapButton1: 1 finger tap emulate button 1(left click)
+# TapButton3: 3 fingers tap emulate button 2(middle click)
+# FingerLow: when finger pressure goes above this value, the dirver counts it as a release
+# FingerHigh: when finger pressure goes above this value, the dirver counts it as a touch
+synclient TouchpadOff=0  TapButton1=1 TapButton3=2 VertTwoFingerScroll=1 HorizTwoFingerScroll=1 VertEdgeScroll=0 HorizEdgeScroll=0 FingerHigh=50 MaxTapTime=200 
+run_app_exclusive syndaemon -k -i 1 -d -t -R
 
 . ~/.xsessionrc-priv
 
