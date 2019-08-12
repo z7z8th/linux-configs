@@ -14,6 +14,9 @@ exit 0
 
 ########### SYSTEM ###########
 apt install linux-image-amd64 firmware-linux firmware-misc-nonfree
+apt install bind9 dnsutils bind9-doc  # need to configure resolv.conf and named.conf.options before used as dns cache server
+systemctl disable dnsmasq
+systemctl stop dnsmasq
 #apt install sysv-rc-conf chkconfig    # sysv rc utils
 #apt install kexec-tools bootchart2 uswsusp    # kernel utils
 apt install cpufrequtils linux-cpupower dmidecode smartmontools memtest86+ lm-sensors ntpd ntpdate
