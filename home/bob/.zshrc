@@ -76,6 +76,7 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
+# update terminal title
 precmd  () { print -Pn "\e]0;%n:%~/\a" }
 preexec  () { print -Pn "\e]0;%n:%~/\a" }
 # bash uses PROMPT_COMMAND
@@ -83,8 +84,10 @@ preexec  () { print -Pn "\e]0;%n:%~/\a" }
 . ~/.zsh/git-prompt.sh
 
 if [ "$color_prompt" = yes ]; then
-    PS1=$'$? %{\e[48;5;173m%}%n%{\e[48;5;244m%}@%m%{\e[m \e[48;5;106m%} %<..<%~%<< %{\e[0m%}$(__git_ps1 " (%s)")
+    PS1=$'$? %{$(tput init)%}%{\e[48;5;173m%}%n%{\e[48;5;244m%}@%m%{\e[m \e[48;5;106m%} %<..<%~%<< %{\e[0m%}$(__git_ps1 " (%s)")
 %{\e[0;38;5;163m%}%#%{\e[0m%} '
+#    PS1=$'$? %{\e[48;5;173m%}%n%{\e[48;5;244m%}@%m%{\e[m \e[48;5;106m%} %<..<%~%<< %{\e[0m%}$(__git_ps1 " (%s)")
+#%{\e[0;38;5;163m%}%#%{\e[0m%} '
     # %50<..<%~%<< to truncate to max length 50
     # %{...%} to include an escape sequence
 else
