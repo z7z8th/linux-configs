@@ -1,6 +1,6 @@
 # ~/.zshrc: executed by zsh(1) for all interactive shell and login shells.
 
-umask 0077
+umask 0022
 
 # If not running interactively, don't do anything
 case $- in
@@ -22,6 +22,7 @@ HISTSIZE=100000
 SAVEHIST=300000
 setopt HIST_IGNORE_DUPS
 setopt appendhistory
+export HISTCONTROL=ignorespace   # leading space hides commands from history
 setopt autocd  # cd with only dir given
 setopt extendedglob 
 setopt nomatch 
@@ -34,6 +35,9 @@ unsetopt beep
 unsetopt nomatch
 
 bindkey -e  # Emacs style line edit
+bindkey "\e[3~" delete-char
+bindkey "\e[H"  beginning-of-line
+bindkey "\e[F"  end-of-line
 
 # git completion related, see ~/.zsh/git-completion.zsh
 fpath=(~/.zsh $fpath)
@@ -46,7 +50,7 @@ compinit
 # end of lines added by compinstall
 # end of lines add by zsh-newuser-install
 
-PS1=$'%n@%m %~ \n%# '
+PS1=$'$? %n@%m %~ \n%# '
 
 # make less more friendly for non-text input files, see lesspipe(1)
 #[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
@@ -79,12 +83,12 @@ preexec  () { print -Pn "\e]0;%n:%~/\a" }
 . ~/.zsh/git-prompt.sh
 
 if [ "$color_prompt" = yes ]; then
-    PS1=$'%{\e[48;5;173m%}%n%{\e[48;5;244m%}@%m%{\e[48;5;106m%} %<..<%~%<< %{\e[0m%}$(__git_ps1 " (%s)")
+    PS1=$'$? %{\e[48;5;173m%}%n%{\e[48;5;244m%}@%m%{\e[m \e[48;5;106m%} %<..<%~%<< %{\e[0m%}$(__git_ps1 " (%s)")
 %{\e[0;38;5;163m%}%#%{\e[0m%} '
     # %50<..<%~%<< to truncate to max length 50
     # %{...%} to include an escape sequence
 else
-    PS1=$'%n@%m:%~%# '
+    PS1=$'$? %n@%m:%~%# '
 fi
 unset color_prompt force_color_prompt
 
@@ -127,36 +131,11 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-export EDITOR=emacs
-export MAKEFLAGS='-j4'
-
-# Less Colors for Man Pages
-export LESS_TERMCAP_mb=$'\e[0;1;5;31m'     # begin blinking
-export LESS_TERMCAP_md=$'\e[0;1;31m'       # begin bold
-export LESS_TERMCAP_me=$'\e[0m'            # end mode
-export LESS_TERMCAP_se=$'\e[0m'            # end standout-mode
-export LESS_TERMCAP_so=$'\e[0;1;32;40m'    # begin standout-mode - info box
-export LESS_TERMCAP_ue=$'\e[0m'            # end underline
-export LESS_TERMCAP_us=$'\e[0;1;4;34m'     # begin underline
-
-PATH=$HOME/.local/bin:$HOME/bin:/sbin:/usr/sbin:/usr/local/sbin:$PATH
-
-if [ "$(uname -s)" = Darwin ]; then
-    # MacPorts Installer addition on 2019-11-05_at_15:46:46: adding an appropriate PATH variable for use with MacPorts.
-    PATH="/opt/local/bin:/opt/local/sbin:$PATH"
-    # Finished adapting your PATH environment variable for use with MacPorts.
-
-    PATH=$PATH:~/Library/Python/3.7/bin/
-    export PATH
-
-    [ "$(ulimit -n)" -lt 10000 ] && ulimit -n 204800
-fi
-
 if [ "$(uname -s)" != Darwin ]; then
     . ~/.zsh/ssh_env
 fi
 
+[ -e "/opt/local/share/fzf/shell/key-bindings.bash" ] && {
+  source /opt/local/share/fzf/shell/key-bindings.zsh
+}
 
-PATH=$HOME/.local/openresty/bin:$PATH
-
-export PATH

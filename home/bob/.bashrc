@@ -1,7 +1,7 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
-umask 0077
+umask 0022
 
 # If not running interactively, don't do anything
 case $- in
@@ -139,31 +139,6 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export EDITOR=emacs
-export MAKEFLAGS='-j4'
-
-# Less Colors for Man Pages
-export LESS_TERMCAP_mb=$'\e[0;1;5;31m'     # begin blinking
-export LESS_TERMCAP_md=$'\e[0;1;31m'       # begin bold
-export LESS_TERMCAP_me=$'\e[0m'            # end mode
-export LESS_TERMCAP_se=$'\e[0m'            # end standout-mode
-export LESS_TERMCAP_so=$'\e[0;1;32;40m'    # begin standout-mode - info box
-export LESS_TERMCAP_ue=$'\e[0m'            # end underline
-export LESS_TERMCAP_us=$'\e[0;1;4;34m'     # begin underline
-
-PATH=$HOME/.local/bin:$HOME/bin:/sbin:/usr/sbin:/usr/local/sbin:$PATH
-
-if [ "$(uname -s)" = Darwin ]; then
-    # MacPorts Installer addition on 2019-11-05_at_15:46:46: adding an appropriate PATH variable for use with MacPorts.
-    PATH="/opt/local/bin:/opt/local/sbin:$PATH"
-    # Finished adapting your PATH environment variable for use with MacPorts.
-
-    PATH=$PATH:~/Library/Python/3.7/bin/
-    export PATH
-
-    [ "$(ulimit -n)" -lt 10000 ] && ulimit -n 204800
-fi
-
 if [ "$(uname -s)" != Darwin ]; then
     . ~/.bash/bash_ssh_env
 fi
@@ -173,6 +148,8 @@ fi
 
 # . ~/.bash/bash-powerline.sh
 
-PATH=$HOME/.local/openresty/bin:$PATH
+[ -n "$PS1" ] && . ~/.profile
 
-export PATH
+[ -e "/opt/local/share/fzf/shell/key-bindings.bash" ] && {
+  . /opt/local/share/fzf/shell/key-bindings.bash
+}
