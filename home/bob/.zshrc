@@ -28,6 +28,11 @@ setopt nomatch
 setopt notify  # notify immediately for jobs status change
 setopt PROMPT_SUBST
 unsetopt beep
+
+# Fix `git reset HEAD^` returns `zsh: no matches found: HEAD^`
+#setopt NO_NOMATCH
+unsetopt nomatch
+
 bindkey -e  # Emacs style line edit
 
 # git completion related, see ~/.zsh/git-completion.zsh
@@ -66,6 +71,10 @@ if [ -n "$force_color_prompt" ]; then
 	color_prompt=
     fi
 fi
+
+precmd  () { print -Pn "\e]0;%n:%~/\a" }
+preexec  () { print -Pn "\e]0;%n:%~/\a" }
+# bash uses PROMPT_COMMAND
 
 . ~/.zsh/git-prompt.sh
 

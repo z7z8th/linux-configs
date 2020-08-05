@@ -68,7 +68,7 @@ fi
 . ~/.bash/git-prompt.sh
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[48;5;173m\]\u\[\033[48;5;244m\]@\h\[\033[48;5;106m\] \w \[\033[0m\]$(__git_ps1 " (%s)")\n\[\033[0;38;5;163m\]\$\[\033[0m\] '
+    PS1='${debian_chroot:+($debian_chroot)}\[\e[48;5;173m\]\u\[\e[48;5;244m\]@\h\[\e[48;5;106m\] \w \[\e[0m\]$(__git_ps1 " (%s)")\n\[\e[0;38;5;163m\]\$\[\e[0m\] '
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -77,7 +77,7 @@ unset color_prompt force_color_prompt
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in
 xterm*|rxvt*)
-    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+    PS1=$'\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]'$PS1
     ;;
 *)
     ;;
@@ -143,13 +143,13 @@ export EDITOR=emacs
 export MAKEFLAGS='-j4'
 
 # Less Colors for Man Pages
-export LESS_TERMCAP_mb=$'\E[0;1;5;31m'     # begin blinking
-export LESS_TERMCAP_md=$'\E[0;1;31m'       # begin bold
-export LESS_TERMCAP_me=$'\E[0m'            # end mode
-export LESS_TERMCAP_se=$'\E[0m'            # end standout-mode
-export LESS_TERMCAP_so=$'\E[0;1;32;40m'    # begin standout-mode - info box
-export LESS_TERMCAP_ue=$'\E[0m'            # end underline
-export LESS_TERMCAP_us=$'\E[0;1;4;34m'     # begin underline
+export LESS_TERMCAP_mb=$'\e[0;1;5;31m'     # begin blinking
+export LESS_TERMCAP_md=$'\e[0;1;31m'       # begin bold
+export LESS_TERMCAP_me=$'\e[0m'            # end mode
+export LESS_TERMCAP_se=$'\e[0m'            # end standout-mode
+export LESS_TERMCAP_so=$'\e[0;1;32;40m'    # begin standout-mode - info box
+export LESS_TERMCAP_ue=$'\e[0m'            # end underline
+export LESS_TERMCAP_us=$'\e[0;1;4;34m'     # begin underline
 
 PATH=$HOME/.local/bin:$HOME/bin:/sbin:/usr/sbin:/usr/local/sbin:$PATH
 
