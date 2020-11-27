@@ -1,0 +1,7 @@
+# im-config(8) generated on Wed, 29 May 2013 17:14:54 +0800
+run_im fcitx
+# im-config signiture: b7cfdbbd2ab944faa93feae6a05e4776  -
+
+# use button 6/7 for forward/backword
+xinput set-button-map "Logitech USB Laser Mouse" 1 2 3 4 5 8 9 6 7
+

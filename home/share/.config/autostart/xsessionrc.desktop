@@ -1,0 +1,4 @@
+[Desktop Entry]
+Name=xsessionrc workaround
+Exec=sh -c '[ -e $HOME/.xsessionrc ] && . $HOME/.xsessionrc; [ -e $HOME/.xprofile ] && .$HOME/.xprofile;'
+Type=Application

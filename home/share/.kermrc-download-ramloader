@@ -1,0 +1,19 @@
+set line /dev/ttyUSB0
+set speed 115200
+set stop-bits 1
+
+set parity none
+set carrier-watch off
+set flow-control none
+set prefixing all
+set reliable off
+set clearchannel off
+set protocol xmodem {} {} {sx -k %s} {sx -k %s} {rx %s} {rx %s}
+
+cd ~/smb/usb-dlr/
+send ./ldr_app-1.1.12.img
+#send ./ldr_app-usb2.0-retry-rel3.bin
+
+
+#cd ~/tmp/
+#send ldr_app-sean.bin

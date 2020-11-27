@@ -1,0 +1,230 @@
+{
+    "C_Cpp.commentContinuationPatterns": [
+        "/**"
+    ],
+    "C_Cpp.default.cStandard": "c11",
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.intelliSenseMode": "gcc-x64",
+    "Lua.completion.callSnippet": "Both",
+    "Lua.diagnostics.globals": [
+        "ngx",
+        "ndk"
+    ],
+    "Lua.hover.fieldInfer": 5000,
+    "Lua.hover.viewStringMax": 512,
+    "Lua.intelliSense.searchDepth": 10,
+    "Lua.runtime.version": "LuaJIT",
+    "Lua.workspace.ignoreDir": [
+        ".vscode",
+        ".git",
+        "backup",
+        "logs"
+    ],
+    "Lua.workspace.ignoreSubmodules": false,
+    "Lua.workspace.library": {
+        "/Volumes/tmp/zhao/.local/openresty/lualib": true,
+        "/Volumes/tmp/zhao/.local/openresty/site/lualib": true,
+        "/Volumes/tmp/zhao/.luarocks/share/lua/5.1": true
+    },
+    "Lua.workspace.preloadFileSize": 1000,
+    "Lua.workspace.useGitIgnore": false,
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "[makefile]": {
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": false,
+        "editor.tabSize": 4
+    },
+    "[markdown]": {
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "files.trimFinalNewlines": false,
+        "files.trimTrailingWhitespace": false
+    },
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+    "[yaml]": {
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4,
+        "files.trimFinalNewlines": true,
+        "files.trimTrailingWhitespace": true
+    },
+    "customizablePreview.rules": [
+        {
+            "command": "pod2html",
+            "directFromCommand": true,
+            "name": "Preview POD",
+            "test": "x => x.extname == '.pod'"
+        }
+    ],
+    "diffEditor.ignoreTrimWhitespace": false,
+    "docker.containers.description": [
+        "ContainerName",
+        "Status"
+    ],
+    "docker.containers.groupBy": "None",
+    "docker.containers.label": "ContainerName",
+    "docker.containers.sortBy": "Label",
+    "editor.cursorWidth": 2,
+    "editor.defaultFormatter": "vscode.json-language-features",
+    "editor.fontFamily": "Monaco, FiraCode Nerd Font Mono, monospace",
+    "editor.fontLigatures": true,
+    "editor.fontSize": 14,
+    "editor.insertSpaces": false,
+    "editor.largeFileOptimizations": false,
+    "editor.minimap.showSlider": "always",
+    "editor.renderWhitespace": "all",
+    "editor.rulers": [
+        79
+    ],
+    "editor.wordWrap": "on",
+    "explorer.confirmDelete": false,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.incrementalNaming": "smart",
+    "explorer.openEditors.visible": 5,
+    "explorer.sortOrder": "type",
+    "extensions.autoUpdate": false,
+    "files.associations": {
+        "**/*.log*": "log",
+        "**/*.sxx": "systemtap",
+        "**/*.y": "c",
+        "**/.luacheckrc": "lua",
+        "**/.vscode/.easyRedis.redis": "json",
+        "**/Makefile.*": "makefile",
+        "**/auto/**/*": "shellscript",
+        "**/localconf": "lua",
+        "**/ngx*/**/*.t": "lua",
+        "**/opconf.example": "lua",
+        "**/opconf.lua*": "lua"
+    },
+    "files.hotExit": "onExitAndWindowClose",
+    "files.maxMemoryForLargeFilesMB": 1024,
+    "files.trimTrailingWhitespace": true,
+    "git.ignoreLegacyWarning": true,
+    "git.showPushSuccessNotification": true,
+    "highlight.decorations": {
+        "rangeBehavior": 0
+    },
+    "highlight.maxMatches": 0,
+    "highlight.regexFlags": "mgi",
+    "highlight.regexes": {
+        "(#|-{2,}|/{2,}|/\\*)?(^|[\\s\\b]+)?(NOTE)(:?.*)": {
+            "decorations": [
+                {
+                    "backgroundColor": "green",
+                    "color": "white"
+                },
+                {
+                    "backgroundColor": "orange",
+                    "color": "white"
+                },
+                {
+                    "backgroundColor": "gray",
+                    "color": "white"
+                }
+            ]
+        },
+        "(#|-{2,}|/{2,}|/\\*)?(^|[\\s\\b]+)?(TODO|FIXME|CAUTION|NOTICE|(?<!DE)(BUG))(:?.*)": {
+            "decorations": [
+                {
+                    "backgroundColor": "green",
+                    "color": "white"
+                },
+                {
+                    "backgroundColor": "gray",
+                    "color": "white"
+                },
+                {
+                    "backgroundColor": "tomato",
+                    "color": "white"
+                },
+                {
+                    "backgroundColor": "#9A7D0A",
+                    "color": "white"
+                },
+                {
+                    "backgroundColor": "#9A7D0A",
+                    "color": "white"
+                }
+            ]
+        },
+        "(\\[(?:crit|alert|emerg)\\].*)": [
+            {
+                "backgroundColor": "#F0F",
+                "color": "white"
+            }
+        ],
+        "(\\[error\\].*)": [
+            {
+                "backgroundColor": "#F004",
+                "color": "lightgray"
+            }
+        ],
+        "(\\[warn\\].*)": [
+            {
+                "backgroundColor": "#A804",
+                "color": "lightgray"
+            }
+        ],
+        "(\\bCRIT\\w*:?)": [
+            {
+                "backgroundColor": "#F0F4",
+                "color": "lightgray"
+            }
+        ]
+    },
+    "highlightwords.box": {
+        "dark": false,
+        "light": false
+    },
+    "highlightwords.defaultMode": 1,
+    "http.proxySupport": "off",
+    "ligaturesLimited.languages": {
+        "shellscript": true
+    },
+    "lua.debug.settings.luaVersion": "5.2",
+    "markdownlint.config": {
+        "MD012": false,
+        "MD013": false,
+        "MD034": false
+    },
+    "material-icon-theme.showWelcomeMessage": false,
+    "merge-conflict.diffViewPosition": "Below",
+    "outline.showFields": false,
+    "outline.showVariables": false,
+    "python.analysis.logLevel": "Warning",
+    "python.autoUpdateLanguageServer": false,
+    "python.defaultInterpreterPath": "python3",
+    "python.formatting.provider": "black",
+    "python.linting.enabled": true,
+    "python.workspaceSymbols.enabled": true,
+    "remote.SSH.defaultExtensions": [
+        "mhutchie.git-graph",
+        "sumneko.lua",
+        "rsbondi.highlight-words",
+        "nzh21.systemtap-syntax",
+        "william-voyek.vscode-nginx"
+    ],
+    "scm.defaultViewMode": "tree",
+    "search.showLineNumbers": true,
+    "search.useIgnoreFiles": false,
+    "shellcheck.exclude": [
+        "2006"
+    ],
+    "svg.preview.autoShow": true,
+    "svg.preview.mode": "svg",
+    "telemetry.enableCrashReporter": false,
+    "telemetry.enableTelemetry": false,
+    "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.scrollback": 100000,
+    "update.mode": "manual",
+    "window.title": "${activeEditorMedium} ${dirty}${separator}${rootName}${separator}${rootPath}",
+    "window.zoomLevel": 0,
+    "workbench.editor.restoreViewState": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.sideBar.location": "right"
+}

@@ -1,0 +1,131 @@
+# set to yes if you want Conky to be forked in the background
+background yes
+
+cpu_avg_samples 1
+net_avg_samples 1
+
+#out_to_console yes
+
+# X font when Xft is disabled, you can pick one with program xfontsel
+#font 7x12
+#font 6x10
+#font 7x13
+#font 8x13
+#font 7x12
+#font *mintsmild.se*
+#font -*-*-*-*-*-*-34-*-*-*-*-*-*-*
+#font -artwiz-snap-normal-r-normal-*-*-100-*-*-p-*-iso8859-1
+
+# Use Xft?
+use_xft yes
+
+# Xft font when Xft is enabled
+xftfont Liberation Mono:size=8
+
+# Create own window instead of using desktop (required in nautilus)
+own_window yes
+own_window_transparent yes
+own_window_colour black
+#own_window_class Conky
+own_window_type desktop
+own_window_hints undecorated,sticky,below,skip_taskbar,skip_pager
+# Text alpha when using Xft
+xftalpha 0.8
+
+total_run_times 0
+
+# mail spool
+mail_spool $MAIL
+
+# Update interval in seconds
+update_interval 1
+
+# Use double buffering (reduces flicker, may not work for everyone)
+double_buffer yes
+
+# Minimum size of text area
+#minimum_size 280 5
+#maximum_width 150
+
+# Draw shades?
+draw_shades no
+
+# Draw outlines?
+draw_outline no
+
+# Draw borders around text
+draw_borders yes
+
+# Stippled borders?
+stippled_borders 10
+
+# border margins
+#border_margin 4
+
+# border width
+border_width 1
+
+# Default colors and also border colors
+default_color white
+default_shade_color white
+default_outline_color white
+
+# Text alignment, other possible values are commented
+#alignment top_left
+#minimum_size 10 10
+gap_x 13
+gap_y 13
+alignment top_right
+#alignment bottom_left
+#alignment bottom_right
+
+# Gap between borders of screen and text
+
+# Add spaces to keep things from moving about?  This only affects certain objects.
+use_spacer none
+
+# Subtract file system buffers from used memory?
+no_buffers yes
+
+# set to yes if you want all text to be in uppercase
+uppercase no
+
+override_utf8_locale yes
+
+TEXT
+$nodename - $sysname $kernel on $machine
+${time %T %D}
+$stippled_hr
+${color #00ffff}Uptime:$color $uptime ${color lightgrey}- Load:$color $loadavg
+${color #00ffff}CPU Usage:${color white} ${cpu}% ${cpubar}
+${color white}${cpugraph 000000 ff0000}
+#${color white}${loadgraph 000000 ffffff 100 -l}
+
+${color #00ffff}RAM Usage:$color $mem/$memmax - $memperc% $membar
+${color #00ffff}Swap Usage:$color $swap/$swapmax - $swapperc% ${swapbar}
+
+${color #00ffff}Processes:$color $processes  ${color grey}Running:$color $running_processes
+
+$color$stippled_hr
+Audio Volume: ${mixer Master} %
+$color$stippled_hr
+${color #00ffff}Networking:
+${color #00ffff}ppp0 IP:${color white} ${addr ppp0}
+ Down:${color #00ff00} ${downspeedf ppp0} kB/s${color #00ffff} ${offset 70}Up:${color #fff000} ${upspeedf ppp0} kB/s
+${color white}${downspeedgraph ppp0 32,150 fff000 00ff00 1000 } $alignr${color white}${upspeedgraph ppp0 32,150 00ff00 fff000 1000}
+
+${color  #00ffff}File systems:
+$color${fs_used /}/${fs_size /} ${fs_bar /}
+
+${color #00ffff}Temperatures:
+${color white}CPU : ${exec expr $(cat /sys/devices/platform/coretemp.0/temp1_input) / 1000 } C
+
+${color #00ffff}Name              PID     CPU%   MEM%
+${color #ff9000} ${top name 1} ${top pid 1} ${top cpu 1} ${top mem 1}
+${color #00ffff} ${top name 2} ${top pid 2} ${top cpu 2} ${top mem 2}
+${color #00ffff} ${top name 3} ${top pid 3} ${top cpu 3} ${top mem 3}
+
+${color lightblue}Mem usage
+${color #ff9000} ${top_mem name 1} ${top_mem pid 1} ${top_mem cpu 1} ${top_mem mem 1}
+${color #00ffff} ${top_mem name 2} ${top_mem pid 2} ${top_mem cpu 2} ${top_mem mem 2}
+${color #00ffff} ${top_mem name 3} ${top_mem pid 3} ${top_mem cpu 3} ${top_mem mem 3}
