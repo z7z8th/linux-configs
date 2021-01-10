@@ -24,8 +24,8 @@ setopt HIST_IGNORE_DUPS
 setopt appendhistory
 export HISTCONTROL=ignorespace   # leading space hides commands from history
 setopt autocd  # cd with only dir given
-setopt extendedglob 
-setopt nomatch 
+setopt extendedglob
+setopt nomatch
 setopt notify  # notify immediately for jobs status change
 setopt PROMPT_SUBST
 unsetopt beep

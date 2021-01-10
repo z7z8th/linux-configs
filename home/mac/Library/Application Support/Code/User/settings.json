@@ -3,17 +3,34 @@
         "/**"
     ],
     "C_Cpp.default.cStandard": "c11",
-    "C_Cpp.default.cppStandard": "c++17",
-    "C_Cpp.default.intelliSenseMode": "gcc-x64",
+    "C_Cpp.default.cppStandard": "c++11",
     "Lua.completion.callSnippet": "Both",
+    "Lua.completion.keywordSnippet": "Both",
     "Lua.diagnostics.globals": [
         "ngx",
         "ndk"
     ],
+    "Lua.diagnostics.severity": {
+        "circle-doc-class": "Hint",
+        "doc-field-no-class": "Hint",
+        "duplicate-doc-class": "Hint",
+        "duplicate-doc-field": "Hint",
+        "duplicate-doc-param": "Hint",
+        "lowercase-global": "Hint",
+        "undefined-doc-class": "Hint",
+        "undefined-doc-name": "Hint",
+        "undefined-doc-param": "Hint"
+    },
     "Lua.hover.fieldInfer": 5000,
     "Lua.hover.viewStringMax": 512,
     "Lua.intelliSense.searchDepth": 10,
+    "Lua.runtime.path": [
+        "?.lua",
+        "?/init.lua",
+        "?/?.lua"
+    ],
     "Lua.runtime.version": "LuaJIT",
+    "Lua.telemetry.enable": false,
     "Lua.workspace.ignoreDir": [
         ".vscode",
         ".git",
@@ -22,9 +39,9 @@
     ],
     "Lua.workspace.ignoreSubmodules": false,
     "Lua.workspace.library": {
-        "/Volumes/tmp/zhao/.local/openresty/lualib": true,
-        "/Volumes/tmp/zhao/.local/openresty/site/lualib": true,
-        "/Volumes/tmp/zhao/.luarocks/share/lua/5.1": true
+        "/Users/tmp/.local/openresty/lualib": true,
+        "/Users/tmp/.local/openresty/site/lualib": true,
+        "/Users/tmp/.luarocks/share/lua/5.1": true
     },
     "Lua.workspace.preloadFileSize": 1000,
     "Lua.workspace.useGitIgnore": false,
@@ -53,6 +70,7 @@
         "files.trimFinalNewlines": true,
         "files.trimTrailingWhitespace": true
     },
+    "cmake.configureOnOpen": false,
     "customizablePreview.rules": [
         {
             "command": "pod2html",
@@ -62,6 +80,7 @@
         }
     ],
     "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.renderSideBySide": true,
     "docker.containers.description": [
         "ContainerName",
         "Status"
@@ -89,7 +108,10 @@
     "explorer.sortOrder": "type",
     "extensions.autoUpdate": false,
     "files.associations": {
+        "**/*.c.orig": "c",
         "**/*.log*": "log",
+        "**/*.mak": "makefile",
+        "**/*.mk": "makefile",
         "**/*.sxx": "systemtap",
         "**/*.y": "c",
         "**/.luacheckrc": "lua",
@@ -104,6 +126,11 @@
     "files.hotExit": "onExitAndWindowClose",
     "files.maxMemoryForLargeFilesMB": 1024,
     "files.trimTrailingWhitespace": true,
+    "git-graph.commitDetailsView.location": "Docked to Bottom",
+    "git-graph.dialog.addTag.pushToRemote": true,
+    "git-graph.dialog.merge.noFastForward": false,
+    "git-graph.enhancedAccessibility": true,
+    "git-graph.repository.commits.showSignatureStatus": true,
     "git.ignoreLegacyWarning": true,
     "git.showPushSuccessNotification": true,
     "highlight.decorations": {
@@ -187,6 +214,7 @@
         "shellscript": true
     },
     "lua.debug.settings.luaVersion": "5.2",
+    "markdown-table-formatter.telemetry": false,
     "markdownlint.config": {
         "MD012": false,
         "MD013": false,
@@ -204,7 +232,6 @@
     "python.workspaceSymbols.enabled": true,
     "remote.SSH.defaultExtensions": [
         "mhutchie.git-graph",
-        "sumneko.lua",
         "rsbondi.highlight-words",
         "nzh21.systemtap-syntax",
         "william-voyek.vscode-nginx"
@@ -219,7 +246,10 @@
     "svg.preview.mode": "svg",
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
+    "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.cursorBlinking": true,
+    "terminal.integrated.localEchoStyle": "dim",
+    "terminal.integrated.macOptionIsMeta": true,
     "terminal.integrated.scrollback": 100000,
     "update.mode": "manual",
     "window.title": "${activeEditorMedium} ${dirty}${separator}${rootName}${separator}${rootPath}",
