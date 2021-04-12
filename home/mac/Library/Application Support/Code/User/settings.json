@@ -27,7 +27,8 @@
     "Lua.runtime.path": [
         "?.lua",
         "?/init.lua",
-        "?/?.lua"
+        "?/?.lua",
+        "/Volumes/tmp/zhao/.local/openresty/site/lualib/?.lua"
     ],
     "Lua.runtime.version": "LuaJIT",
     "Lua.telemetry.enable": false,
@@ -38,11 +39,11 @@
         "logs"
     ],
     "Lua.workspace.ignoreSubmodules": false,
-    "Lua.workspace.library": {
-        "/Users/tmp/.local/openresty/lualib": true,
-        "/Users/tmp/.local/openresty/site/lualib": true,
-        "/Users/tmp/.luarocks/share/lua/5.1": true
-    },
+    "Lua.workspace.library": [
+        "/Users/tmp/.local/openresty/lualib",
+        "/Users/tmp/.local/openresty/site/lualib",
+        "/Users/tmp/.luarocks/share/lua/5.1"
+    ],
     "Lua.workspace.preloadFileSize": 1000,
     "Lua.workspace.useGitIgnore": false,
     "[cpp]": {
@@ -121,7 +122,8 @@
         "**/localconf": "lua",
         "**/ngx*/**/*.t": "lua",
         "**/opconf.example": "lua",
-        "**/opconf.lua*": "lua"
+        "**/opconf.lua*": "lua",
+        "**/*.rockspec": "lua",
     },
     "files.hotExit": "onExitAndWindowClose",
     "files.maxMemoryForLargeFilesMB": 1024,
@@ -251,6 +253,7 @@
     "terminal.integrated.localEchoStyle": "dim",
     "terminal.integrated.macOptionIsMeta": true,
     "terminal.integrated.scrollback": 100000,
+    "terminal.integrated.shell.osx": "zsh",
     "update.mode": "manual",
     "window.title": "${activeEditorMedium} ${dirty}${separator}${rootName}${separator}${rootPath}",
     "window.zoomLevel": 0,
