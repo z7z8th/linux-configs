@@ -4,8 +4,10 @@
     ],
     "C_Cpp.default.cStandard": "c11",
     "C_Cpp.default.cppStandard": "c++11",
+    "Lua.completion.autoRequire": false,
     "Lua.completion.callSnippet": "Both",
     "Lua.completion.keywordSnippet": "Both",
+    "Lua.diagnostics.enable": false,
     "Lua.diagnostics.globals": [
         "ngx",
         "ndk"
@@ -21,6 +23,9 @@
         "undefined-doc-name": "Hint",
         "undefined-doc-param": "Hint"
     },
+    "Lua.diagnostics.workspaceDelay": 500,
+    "Lua.diagnostics.workspaceRate": 90,
+    "Lua.hint.setType": true,
     "Lua.hover.fieldInfer": 5000,
     "Lua.hover.viewStringMax": 512,
     "Lua.intelliSense.searchDepth": 10,
@@ -71,6 +76,7 @@
         "files.trimFinalNewlines": true,
         "files.trimTrailingWhitespace": true
     },
+    "auto-reload.interval": 1000,
     "cmake.configureOnOpen": false,
     "customizablePreview.rules": [
         {
@@ -92,7 +98,6 @@
     "editor.cursorWidth": 2,
     "editor.defaultFormatter": "vscode.json-language-features",
     "editor.fontFamily": "Monaco, monospace",
-    // "editor.fontLigatures": true,
     "editor.fontSize": 14,
     "editor.insertSpaces": false,
     "editor.largeFileOptimizations": false,
@@ -101,18 +106,21 @@
     "editor.rulers": [
         79
     ],
+    "editor.semanticHighlighting.enabled": true,
     "editor.wordWrap": "on",
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "explorer.incrementalNaming": "smart",
     "explorer.openEditors.visible": 5,
     "explorer.sortOrder": "type",
+    "extensions.autoCheckUpdates": false,
     "extensions.autoUpdate": false,
     "files.associations": {
         "**/*.c.orig": "c",
         "**/*.log*": "log",
         "**/*.mak": "makefile",
         "**/*.mk": "makefile",
+        "**/*.rockspec": "lua",
         "**/*.sxx": "systemtap",
         "**/*.y": "c",
         "**/.luacheckrc": "lua",
@@ -122,8 +130,7 @@
         "**/localconf": "lua",
         "**/ngx*/**/*.t": "lua",
         "**/opconf.example": "lua",
-        "**/opconf.lua*": "lua",
-        "**/*.rockspec": "lua",
+        "**/opconf.lua*": "lua"
     },
     "files.hotExit": "onExitAndWindowClose",
     "files.maxMemoryForLargeFilesMB": 1024,

@@ -44,3 +44,8 @@ export PATH="$PATH:$NPM_PACKAGES/bin"
 export MANPATH="${MANPATH-$(manpath)}:$NPM_PACKAGES/share/man"
 
 export MACOSX_DEPLOYMENT_TARGET=10.14  # Fix unwind symbol not found by ld issue
+
+function clrpath()
+{
+    export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+}
