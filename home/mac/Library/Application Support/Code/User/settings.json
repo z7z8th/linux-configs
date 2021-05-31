@@ -33,7 +33,7 @@
         "?.lua",
         "?/init.lua",
         "?/?.lua",
-        "/Volumes/tmp/zhao/.local/openresty/site/lualib/?.lua"
+        "/Volumes/tmp/.local/openresty/site/lualib/?.lua"
     ],
     "Lua.runtime.version": "LuaJIT",
     "Lua.telemetry.enable": false,
@@ -87,7 +87,7 @@
         }
     ],
     "diffEditor.ignoreTrimWhitespace": false,
-    "diffEditor.renderSideBySide": true,
+    "diffEditor.renderSideBySide": false,
     "docker.containers.description": [
         "ContainerName",
         "Status"
@@ -100,14 +100,12 @@
     "editor.fontFamily": "Monaco, monospace",
     "editor.fontSize": 14,
     "editor.insertSpaces": false,
-    "editor.largeFileOptimizations": false,
+    "editor.minimap.enabled": false,
     "editor.minimap.showSlider": "always",
     "editor.renderWhitespace": "all",
-    "editor.rulers": [
-        79
-    ],
     "editor.semanticHighlighting.enabled": true,
     "editor.wordWrap": "on",
+    "editor.wordWrapColumn": 100,
     "explorer.confirmDelete": false,
     "explorer.confirmDragAndDrop": false,
     "explorer.incrementalNaming": "smart",
