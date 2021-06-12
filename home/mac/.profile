@@ -35,8 +35,8 @@ PATH=$PATH:$HOME/.local/openresty/bin:$HOME/.luarocks/bin:$HOME/src/garbage/tool
 PATH=$HOME/.local/sbin:$HOME/.local/bin:$HOME/bin:$PATH
 PATH=/sbin:/usr/sbin:/usr/local/sbin:$PATH
 
-export LUA_PATH="?;?.lua;$HOME/.local/openresty/lualib/?.lua;$HOME/.local/openresty/site/lualib/?.lua;$HOME/.luarocks/share/lua/5.1/?.lua;$HOME/.luarocks/share/lua/5.1/?/init.lua;lua/?.lua;;"
-export LUA_CPATH="?;?.so;?.dylib;$HOME/.local/openresty/lualib/?.so;$HOME/.luarocks/lib/lua/5.1/?.so;$HOME/.luarocks/lib/lua/5.1/?.dylib;lib/?.so;lib/bin/?.so;lib/?.dylib;lib/bin/?.dylib;;"
+export LUA_PATH="?;?.lua;lua/?.lua;$HOME/.luarocks/share/lua/5.1/?.lua;$HOME/.luarocks/share/lua/5.1/?/init.lua;$HOME/.local/openresty/site/lualib/?.lua;$HOME/.local/openresty/lualib/?.lua;;"
+export LUA_CPATH="?;?.so;?.dylib;lib/?.so;lib/bin/?.so;lib/?.dylib;lib/bin/?.dylib;$HOME/.luarocks/lib/lua/5.1/?.so;$HOME/.luarocks/lib/lua/5.1/?.dylib;$HOME/.local/openresty/lualib/?.so;;"
 
 NPM_PACKAGES="${HOME}/.npm-packages"
 
@@ -49,3 +49,8 @@ function clrpath()
 {
     export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 }
+
+# MacPorts Installer addition on 2021-06-01_at_09:02:43: adding an appropriate MANPATH variable for use with MacPorts.
+export MANPATH="/opt/local/share/man:$MANPATH"
+# Finished adapting your MANPATH environment variable for use with MacPorts.
+
