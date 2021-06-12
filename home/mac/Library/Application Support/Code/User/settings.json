@@ -76,6 +76,13 @@
         "files.trimFinalNewlines": true,
         "files.trimTrailingWhitespace": true
     },
+    "astyle.cmd_options": [
+        "--style=linux",
+        "--pad-oper",
+        "--pad-header",
+        "--break-one-line-headers",
+        "--max-code-length=120"
+    ],
     "auto-reload.interval": 1000,
     "cmake.configureOnOpen": false,
     "customizablePreview.rules": [
@@ -87,7 +94,6 @@
         }
     ],
     "diffEditor.ignoreTrimWhitespace": false,
-    "diffEditor.renderSideBySide": false,
     "docker.containers.description": [
         "ContainerName",
         "Status"
@@ -121,6 +127,7 @@
         "**/*.rockspec": "lua",
         "**/*.sxx": "systemtap",
         "**/*.y": "c",
+        "**/*dockerfile": "dockerfile",
         "**/.luacheckrc": "lua",
         "**/.vscode/.easyRedis.redis": "json",
         "**/Makefile.*": "makefile",
@@ -261,8 +268,13 @@
     "terminal.integrated.shell.osx": "zsh",
     "update.mode": "manual",
     "window.title": "${activeEditorMedium} ${dirty}${separator}${rootName}${separator}${rootPath}",
-    "window.zoomLevel": 0,
     "workbench.editor.restoreViewState": false,
+    "workbench.editorAssociations": [
+        {
+            "filenamePattern": "*.ipynb",
+            "viewType": "jupyter-notebook"
+        }
+    ],
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "right"
 }
