@@ -83,7 +83,6 @@
         "--break-one-line-headers",
         "--max-code-length=120"
     ],
-    "auto-reload.interval": 1000,
     "cmake.configureOnOpen": false,
     "customizablePreview.rules": [
         {
@@ -94,6 +93,7 @@
         }
     ],
     "diffEditor.ignoreTrimWhitespace": false,
+    "diffEditor.renderSideBySide": false,
     "docker.containers.description": [
         "ContainerName",
         "Status"
@@ -264,17 +264,18 @@
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.localEchoStyle": "dim",
     "terminal.integrated.macOptionIsMeta": true,
+    "terminal.integrated.profiles.osx": {
+        "zsh (login)": {
+            "args": [
+                "-l"
+            ],
+            "path": "zsh"
+        }
+    },
     "terminal.integrated.scrollback": 100000,
-    "terminal.integrated.shell.osx": "zsh",
     "update.mode": "manual",
     "window.title": "${activeEditorMedium} ${dirty}${separator}${rootName}${separator}${rootPath}",
     "workbench.editor.restoreViewState": false,
-    "workbench.editorAssociations": [
-        {
-            "filenamePattern": "*.ipynb",
-            "viewType": "jupyter-notebook"
-        }
-    ],
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "right"
 }
