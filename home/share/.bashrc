@@ -137,6 +137,10 @@ if ! shopt -oq posix; then
   elif [ -d /etc/bash_completion.d ]; then
     for f in /etc/bash_completion.d/*; do . $f; done
   fi
+
+  if [ -f "$HOME/.local/share/bash-completion/completions" ]; then
+    . "$HOME/.local/share/bash-completion/completions"
+  fi
 fi
 
 if [ "$(uname -s)" != Darwin ]; then

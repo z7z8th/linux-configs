@@ -2,7 +2,7 @@
 Name=Visual Studio Code - URL Handler
 Comment=Code Editing. Redefined.
 GenericName=Text Editor
-Exec=.local/share/VSCode-linux-x64/code --open-url %U
+Exec=/home/bob/.local/share/VSCode-linux-x64/code --open-url %U
 Icon=com.visualstudio.code
 Type=Application
 NoDisplay=true
