@@ -67,12 +67,12 @@ force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-	# We have color support; assume it's compliant with Ecma-48
-	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
-	# a case would tend to support setf rather than setaf.)
-	color_prompt=yes
+        # We have color support; assume it's compliant with Ecma-48
+        # (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+        # a case would tend to support setf rather than setaf.)
+        color_prompt=yes
     else
-	color_prompt=
+        color_prompt=
     fi
 fi
 
@@ -120,11 +120,11 @@ else
     alias ll='ls -G -l'
     alias la='ls -G -a'
     alias lF='ls -G -F'
-
-    alias grep='grep --color=auto'
-    alias fgrep='fgrep --color=auto'
-    alias egrep='egrep --color=auto'
 fi
+
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
 
 # less options: -R raw control char, -i ignore case
 #export LESS='-Ri'
@@ -139,10 +139,11 @@ if [ -f ~/.bash_aliases ]; then
 fi
 
 if [ "$(uname -s)" != Darwin ]; then
-    . ~/.zsh/ssh_env
+    . ~/.zsh/ssh_agent.sh
 fi
 
-[ -e "/opt/local/share/fzf/shell/key-bindings.bash" ] && {
-  source /opt/local/share/fzf/shell/key-bindings.zsh
-}
+[ -e "/opt/local/share/fzf/shell/key-bindings.bash" ] && source /opt/local/share/fzf/shell/key-bindings.zsh
+[ -e /usr/share/doc/fzf/examples/key-bindings.zsh ] && source /usr/share/doc/fzf/examples/key-bindings.zsh
 
+# Append this line to ~/.zshrc to enable fuzzy auto-completion for Zsh:
+[ -e /usr/share/doc/fzf/examples/completion.zsh ] && source /usr/share/doc/fzf/examples/completion.zsh

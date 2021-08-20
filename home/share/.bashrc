@@ -144,7 +144,7 @@ if ! shopt -oq posix; then
 fi
 
 if [ "$(uname -s)" != Darwin ]; then
-    . ~/.bash/bash_ssh_env
+    . ~/.bash/ssh_agent.sh
 fi
 . ~/.bash/git-completion.bash
 
@@ -154,6 +154,7 @@ fi
 
 [ -n "$PS1" ] && . ~/.profile
 
-[ -e "/opt/local/share/fzf/shell/key-bindings.bash" ] && {
-  . /opt/local/share/fzf/shell/key-bindings.bash
-}
+[ -e /opt/local/share/fzf/shell/key-bindings.bash ] && . /opt/local/share/fzf/shell/key-bindings.bash
+[ -e /usr/share/doc/fzf/examples/key-bindings.bash ] && source /usr/share/doc/fzf/examples/key-bindings.bash
+# Append this line to ~/.bashrc to enable fuzzy auto-completion for Bash:
+[ -e /usr/share/doc/fzf/examples/completion.bash ] && source /usr/share/doc/fzf/examples/completion.bash
