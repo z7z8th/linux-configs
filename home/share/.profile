@@ -47,7 +47,7 @@ export MANPATH="${MANPATH-$(manpath)}:$NPM_PACKAGES/share/man"
 
 #export MACOSX_DEPLOYMENT_TARGET=10.14  # Fix unwind symbol not found by ld issue
 
-function safepath()
+safepath ()
 {
     export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 }
@@ -55,3 +55,6 @@ function safepath()
 # MacPorts Installer addition on 2021-06-01_at_09:02:43: adding an appropriate MANPATH variable for use with MacPorts.
 [ -n "$is_darwin" ] && export MANPATH="/opt/local/share/man:$MANPATH"
 # Finished adapting your MANPATH environment variable for use with MacPorts.
+
+export PATH=/usr/local/cuda-11.4/bin${PATH:+:${PATH}}
+export LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}

@@ -142,6 +142,8 @@ if [ "$(uname -s)" != Darwin ]; then
     . ~/.zsh/ssh_agent.sh
 fi
 
+[ -n "$PS1" ] && . ~/.profile
+
 [ -e "/opt/local/share/fzf/shell/key-bindings.bash" ] && source /opt/local/share/fzf/shell/key-bindings.zsh
 [ -e /usr/share/doc/fzf/examples/key-bindings.zsh ] && source /usr/share/doc/fzf/examples/key-bindings.zsh
 
