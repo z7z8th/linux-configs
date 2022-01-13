@@ -8,7 +8,9 @@ case $- in
       *) return;;
 esac
 
-if [ "$(uname -s)" = Darwin ]; then
+kernel=$(uname -s)
+
+if [ "$kernel" = Darwin ]; then
     # Mac did not set locale correctly, ssh to linux warns
     export LC_ALL=en_US.UTF-8
     export LANG=en_US.UTF-8
@@ -84,8 +86,13 @@ preexec  () { print -Pn "\e]0;%n:%~/\a" }
 . ~/.zsh/git-prompt.sh
 
 if [ "$color_prompt" = yes ]; then
-    PS1=$'$? %{$(tput init)%}%{\e[48;5;173m%}%n%{\e[48;5;244m%}@%m%{\e[m \e[48;5;106m%} %<..<%~%<< %{\e[0m%}$(__git_ps1 " (%s)")
+    if [ "$kernel" = Darwin ]; then
+        PS1=$'$? %{$(tput init)%}%{\e[48;5;173m%}%n%{\e[48;5;244m%}@%m%{\e[m \e[48;5;106m%} %<..<%~%<< %{\e[0m%}$(__git_ps1 " (%s)")
 %{\e[0;38;5;163m%}%#%{\e[0m%} '
+    else
+        PS1=$'$? %{$(tput init)%}%{\e[48;5;163m%}%n%{\e[48;5;244m%}@%m%{\e[m \e[48;5;106m%} %<..<%~%<< %{\e[0m%}$(__git_ps1 " (%s)")
+%{\e[0;38;5;163m%}%#%{\e[0m%} '
+    fi
 #    PS1=$'$? %{\e[48;5;173m%}%n%{\e[48;5;244m%}@%m%{\e[m \e[48;5;106m%} %<..<%~%<< %{\e[0m%}$(__git_ps1 " (%s)")
 #%{\e[0;38;5;163m%}%#%{\e[0m%} '
     # %50<..<%~%<< to truncate to max length 50
@@ -111,7 +118,7 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-if [ "$(uname -s)" != Darwin ]; then
+if [ "$kernel" != Darwin ]; then
     alias ll='ls -l'
     alias la='ls -A'
     alias l='ls -CF'
@@ -138,7 +145,7 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
-if [ "$(uname -s)" != Darwin ]; then
+if [ "$kernel" != Darwin ]; then
     . ~/.zsh/ssh_agent.sh
 fi
 

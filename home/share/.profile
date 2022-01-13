@@ -1,6 +1,8 @@
-[ "$(uname -s)" = Darwin ] && is_darwin=true
+#!/bin/bash
 
-if [ -n "$is_darwin" ]; then
+kernel=$(uname -s)
+
+if [ "$kernel" = Darwin ]; then
     export LD_LIBRARY_PATH=/opt/local/lib:$LD_LIBRARY_PATH
     # MacPorts Installer addition on 2019-11-05_at_15:46:46: adding an appropriate PATH variable for use with MacPorts.
     export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
@@ -20,7 +22,7 @@ export LESS_TERMCAP_ue=$'\e[0m'            # end underline
 export LESS_TERMCAP_us=$'\e[0;1;4;34m'     # begin underline
 
 
-if [ -n "$is_darwin" ]; then
+if [ "$kernel" = Darwin ]; then
     # MacPorts Installer addition on 2019-11-05_at_15:46:46: adding an appropriate PATH variable for use with MacPorts.
     PATH="/opt/local/bin:/opt/local/sbin:$PATH"
     # Finished adapting your PATH environment variable for use with MacPorts.
@@ -58,3 +60,8 @@ safepath ()
 
 export PATH=/usr/local/cuda-11.4/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+if [ "$kernel" = Linux ]; then
+    HiDPI_SCALE=$(xrandr  --current | gawk 'match($0, /primary ([0-9]+)x([0-9]+).*\(.*\) ([0-9]+)mm x ([0-9]+)mm/, m) { print m[1]/m[3]*25.4/96 }')
+    export QT_SCALE_FACTOR=$HiDPI_SCALE
+fi
