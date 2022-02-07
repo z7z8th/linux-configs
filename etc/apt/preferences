@@ -1,0 +1,11 @@
+#Package: *
+#Pin: release a=stable
+#Pin-Priority: 1001
+
+Package: *
+Pin: release o=NVIDIA
+Pin-Priority: 990
+
+Package: *
+Pin: release a=stable-security
+Pin-Priority: 991
