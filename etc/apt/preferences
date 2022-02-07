@@ -8,4 +8,4 @@ Pin-Priority: 990
 
 Package: *
 Pin: release a=stable-security
-Pin-Priority: 991
+Pin-Priority: 990
