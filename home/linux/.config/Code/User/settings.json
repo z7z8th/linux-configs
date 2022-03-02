@@ -3,7 +3,9 @@
         "/**"
     ],
     "C_Cpp.default.cStandard": "c11",
+    "C_Cpp.default.compilerPath": "gcc",
     "C_Cpp.default.cppStandard": "c++11",
+    "C_Cpp.formatting": "clangFormat",
     "Lua.completion.autoRequire": false,
     "Lua.completion.callSnippet": "Both",
     "Lua.completion.keywordSnippet": "Both",
@@ -108,6 +110,7 @@
     "editor.minimap.showSlider": "always",
     "editor.renderWhitespace": "all",
     "editor.semanticHighlighting.enabled": true,
+    "editor.suggestSelection": "first",
     "editor.wordWrap": "on",
     "editor.wordWrapColumn": 100,
     "explorer.confirmDelete": false,
@@ -222,6 +225,7 @@
     },
     "highlightwords.defaultMode": 1,
     "http.proxySupport": "off",
+    "keyboard.dispatch": "keyCode",
     "ligaturesLimited.languages": {
         "shellscript": true
     },
@@ -242,6 +246,7 @@
     "python.formatting.provider": "black",
     "python.linting.enabled": true,
     "python.workspaceSymbols.enabled": true,
+    "redhat.telemetry.enabled": false,
     "remote.SSH.defaultExtensions": [
         "mhutchie.git-graph",
         "rsbondi.highlight-words",
@@ -258,6 +263,7 @@
     "svg.preview.mode": "svg",
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
     "terminal.integrated.copyOnSelection": true,
     "terminal.integrated.cursorBlinking": true,
     "terminal.integrated.localEchoStyle": "dim",
@@ -271,14 +277,9 @@
     },
     "terminal.integrated.scrollback": 100000,
     "update.mode": "manual",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "window.title": "${activeEditorMedium} ${dirty}${separator}${rootName}${separator}${rootPath}",
     "workbench.editor.restoreViewState": false,
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.sideBar.location": "right",
-    "keyboard.dispatch": "keyCode",
-    "redhat.telemetry.enabled": false,
-    "editor.suggestSelection": "first",
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    "C_Cpp.default.compilerPath": "gcc",
-    "C_Cpp.formatting": "clangFormat"
+    "workbench.sideBar.location": "right"
 }
