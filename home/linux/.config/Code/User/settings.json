@@ -104,7 +104,6 @@
     "editor.defaultFormatter": "vscode.json-language-features",
     "editor.fontFamily": "Monaco, monospace",
     "editor.fontSize": 14,
-    "editor.insertSpaces": false,
     "editor.minimap.enabled": false,
     "editor.minimap.showSlider": "always",
     "editor.renderWhitespace": "all",
@@ -279,5 +278,7 @@
     "keyboard.dispatch": "keyCode",
     "redhat.telemetry.enabled": false,
     "editor.suggestSelection": "first",
-"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "C_Cpp.default.compilerPath": "gcc",
+    "C_Cpp.formatting": "clangFormat"
 }

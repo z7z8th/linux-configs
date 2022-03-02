@@ -55,13 +55,14 @@ safepath ()
 }
 
 # MacPorts Installer addition on 2021-06-01_at_09:02:43: adding an appropriate MANPATH variable for use with MacPorts.
-[ -n "$is_darwin" ] && export MANPATH="/opt/local/share/man:$MANPATH"
+[ "$kernel" = Darwin ] && export MANPATH="/opt/local/share/man:$MANPATH"
 # Finished adapting your MANPATH environment variable for use with MacPorts.
 
 export PATH=/usr/local/cuda-11.4/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 
-if [ "$kernel" = Linux ]; then
-    HiDPI_SCALE=$(xrandr  --current | gawk 'match($0, /primary ([0-9]+)x([0-9]+).*\(.*\) ([0-9]+)mm x ([0-9]+)mm/, m) { print m[1]/m[3]*25.4/96 }')
-    export QT_SCALE_FACTOR=$HiDPI_SCALE
-fi
+# set scale factor in application specific .desktop file
+# if [ "$kernel" = Linux ]; then
+#     HiDPI_SCALE=$(xrandr  --current | gawk 'match($0, /primary ([0-9]+)x([0-9]+).*\(.*\) ([0-9]+)mm x ([0-9]+)mm/, m) { print m[1]/m[3]*25.4/96 }')
+#     export QT_SCALE_FACTOR=$HiDPI_SCALE
+# fi

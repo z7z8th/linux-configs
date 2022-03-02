@@ -68,7 +68,11 @@ fi
 . ~/.bash/git-prompt.sh
 
 if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\e[48;5;173m\]\u\[\e[48;5;244m\]@\h\[\e[48;5;106m\] \w \[\e[0m\]$(__git_ps1 " (%s)")\n\[\e[0;38;5;163m\]\$\[\e[0m\] '
+    if [ "$(id)" != 0 ]; then
+        PS1='${debian_chroot:+($debian_chroot)}\[\e[48;5;173m\]\u\[\e[48;5;244m\]@\h\[\e[48;5;106m\] \w \[\e[0m\]$(__git_ps1 " (%s)")\n\[\e[0;38;5;163m\]\$\[\e[0m\] '
+    else
+        PS1='${debian_chroot:+($debian_chroot)}\[\e[48;5;110m\]\u\[\e[48;5;244m\]@\h\[\e[48;5;165m\] \w \[\e[0m\]$(__git_ps1 " (%s)")\n\[\e[0;38;5;165m\]\$\[\e[0m\] '
+    fi
 else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
@@ -152,7 +156,7 @@ fi
 
 # . ~/.bash/bash-powerline.sh
 
-[ -n "$PS1" ] && . ~/.profile
+[ -n "$PS1" -a "$(id)" != 0 ] && . ~/.profile
 
 [ -e /opt/local/share/fzf/shell/key-bindings.bash ] && . /opt/local/share/fzf/shell/key-bindings.bash
 [ -e /usr/share/doc/fzf/examples/key-bindings.bash ] && source /usr/share/doc/fzf/examples/key-bindings.bash
