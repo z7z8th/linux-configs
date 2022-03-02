@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=UserStart
+Comment=Startup on user login
+Exec=run-parts --new-session -v /home/tmp/.config/autostart-scripts
+Terminal=true
+Type=Application
+
