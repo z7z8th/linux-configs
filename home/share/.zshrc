@@ -1,4 +1,8 @@
 # ~/.zshrc: executed by zsh(1) for all interactive shell and login shells.
+if [ -n "$_zshrc_sourced" ]; then
+    return
+fi
+_zshrc_sourced=1
 
 umask 0022
 

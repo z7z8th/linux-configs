@@ -1,6 +1,11 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
+if [ -n "$_bashrc_sourced" ]; then
+    return
+fi
+_bashrc_sourced=1
+
 umask 0022
 
 # If not running interactively, don't do anything
@@ -157,9 +162,7 @@ fi
 
 # . ~/.bash/bash-powerline.sh
 
-if ! shopt -q login_shell && [ $(id -u) != 0 ]; then
-    . ~/.profile
-fi
+. ~/.profile
 
 [ -e /opt/local/share/fzf/shell/key-bindings.bash ] && . /opt/local/share/fzf/shell/key-bindings.bash
 [ -e /usr/share/doc/fzf/examples/key-bindings.bash ] && source /usr/share/doc/fzf/examples/key-bindings.bash

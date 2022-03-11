@@ -1,4 +1,8 @@
 #!/bin/bash
+if [ -n "$_profile_sourced" ]; then
+    return
+fi
+_profile_sourced=1
 
 kernel=$(uname -s)
 
@@ -67,4 +71,6 @@ export LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64${LD_LIBRARY_PATH:+:${LD_LIBRAR
 #     export QT_SCALE_FACTOR=$HiDPI_SCALE
 # fi
 
-[ -f "$HOME/.bashrc" ] && . ~/.bashrc
+if [ -f "$HOME/.bashrc" ] && [ -n "$BASH_VERSION" ]; then
+    . ~/.bashrc
+fi
