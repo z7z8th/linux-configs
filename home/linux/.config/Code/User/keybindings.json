@@ -1029,6 +1029,20 @@
 		"key": "ctrl+k v",
 		"command": "-markdown.showPreviewToSide",
 		"when": "!notebookEditorFocused && editorLangId == 'markdown'"
+	},
+	{
+		"key": "alt+meta+k",
+		"command": "bookmarks.toggle",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+alt+k",
+		"command": "-bookmarks.toggle",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "ctrl+alt+k",
+		"command": "highlightwords.addHighlight"
 	}
 
 ]

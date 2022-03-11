@@ -74,7 +74,7 @@
     "[yaml]": {
         "editor.detectIndentation": false,
         "editor.insertSpaces": true,
-        "editor.tabSize": 4,
+        "editor.tabSize": 2,
         "files.trimFinalNewlines": true,
         "files.trimTrailingWhitespace": true
     },
@@ -242,7 +242,6 @@
     "outline.showVariables": false,
     "python.analysis.logLevel": "Warning",
     "python.autoUpdateLanguageServer": false,
-    "python.defaultInterpreterPath": "python3",
     "python.formatting.provider": "black",
     "python.linting.enabled": true,
     "python.workspaceSymbols.enabled": true,
@@ -281,5 +280,7 @@
     "window.title": "${activeEditorMedium} ${dirty}${separator}${rootName}${separator}${rootPath}",
     "workbench.editor.restoreViewState": false,
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.sideBar.location": "right"
+    "workbench.sideBar.location": "right",
+    "gitlens.plusFeatures.enabled": false,
+    "gitlens.currentLine.scrollable": false
 }
