@@ -66,3 +66,5 @@ export LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64${LD_LIBRARY_PATH:+:${LD_LIBRAR
 #     HiDPI_SCALE=$(xrandr  --current | gawk 'match($0, /primary ([0-9]+)x([0-9]+).*\(.*\) ([0-9]+)mm x ([0-9]+)mm/, m) { print m[1]/m[3]*25.4/96 }')
 #     export QT_SCALE_FACTOR=$HiDPI_SCALE
 # fi
+
+[ -f "$HOME/.bashrc" ] && . ~/.bashrc

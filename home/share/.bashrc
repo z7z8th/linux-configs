@@ -67,14 +67,15 @@ fi
 
 . ~/.bash/git-prompt.sh
 
+# see https://en.wikipedia.org/wiki/ANSI_escape_code
 if [ "$color_prompt" = yes ]; then
-    if [ "$(id)" != 0 ]; then
-        PS1='${debian_chroot:+($debian_chroot)}\[\e[48;5;173m\]\u\[\e[48;5;244m\]@\h\[\e[48;5;106m\] \w \[\e[0m\]$(__git_ps1 " (%s)")\n\[\e[0;38;5;163m\]\$\[\e[0m\] '
+    if [ "$(id -u)" != 0 ]; then
+        PS1='$? ${debian_chroot:+($debian_chroot)}\[\e[48;5;173m\]\u\[\e[48;5;244m\]@\h\[\e[48;5;106m\] \w \[\e[0m\]$(__git_ps1 " (%s)")\n\[\e[31m\]\$\[\e[0m\] '
     else
-        PS1='${debian_chroot:+($debian_chroot)}\[\e[48;5;110m\]\u\[\e[48;5;244m\]@\h\[\e[48;5;165m\] \w \[\e[0m\]$(__git_ps1 " (%s)")\n\[\e[0;38;5;165m\]\$\[\e[0m\] '
+        PS1='$? ${debian_chroot:+($debian_chroot)}\[\e[91m\]\u\[\e[0;48;5;244m\]@\h\[\e[48;5;68m\] \w \[\e[0m\]$(__git_ps1 " (%s)")\n\[\e[31m\]\$\[\e[0m\] '
     fi
 else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    PS1='$? ${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
 unset color_prompt force_color_prompt
 
@@ -156,7 +157,9 @@ fi
 
 # . ~/.bash/bash-powerline.sh
 
-[ -n "$PS1" -a "$(id)" != 0 ] && . ~/.profile
+if ! shopt -q login_shell && [ $(id -u) != 0 ]; then
+    . ~/.profile
+fi
 
 [ -e /opt/local/share/fzf/shell/key-bindings.bash ] && . /opt/local/share/fzf/shell/key-bindings.bash
 [ -e /usr/share/doc/fzf/examples/key-bindings.bash ] && source /usr/share/doc/fzf/examples/key-bindings.bash
