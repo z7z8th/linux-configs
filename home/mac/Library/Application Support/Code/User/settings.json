@@ -52,7 +52,7 @@
     "Lua.workspace.preloadFileSize": 1000,
     "Lua.workspace.useGitIgnore": false,
     "[cpp]": {
-        "editor.defaultFormatter": "ms-vscode.cpptools"
+        "editor.defaultFormatter": "chiehyu.vscode-astyle"
     },
     "[makefile]": {
         "editor.detectIndentation": false,
@@ -66,8 +66,13 @@
         "files.trimFinalNewlines": false,
         "files.trimTrailingWhitespace": false
     },
+    "[python]": {
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4
+    },
     "[xml]": {
-        "editor.defaultFormatter": "redhat.vscode-xml"
+        "editor.defaultFormatter": "DotJoshJohnson.xml"
     },
     "[yaml]": {
         "editor.detectIndentation": false,
@@ -81,7 +86,9 @@
         "--pad-oper",
         "--pad-header",
         "--break-one-line-headers",
-        "--max-code-length=120"
+        "--max-code-length=120",
+        "--indent-preproc-define",
+        "--indent-preproc-block"
     ],
     "cmake.configureOnOpen": false,
     "customizablePreview.rules": [
@@ -93,7 +100,6 @@
         }
     ],
     "diffEditor.ignoreTrimWhitespace": false,
-    "diffEditor.renderSideBySide": false,
     "docker.containers.description": [
         "ContainerName",
         "Status"
@@ -106,6 +112,7 @@
     "editor.fontFamily": "Monaco, monospace",
     "editor.fontSize": 14,
     "editor.insertSpaces": false,
+    "editor.largeFileOptimizations": false,
     "editor.minimap.enabled": false,
     "editor.minimap.showSlider": "always",
     "editor.renderWhitespace": "all",
@@ -121,25 +128,35 @@
     "extensions.autoUpdate": false,
     "files.associations": {
         "**/*.c.orig": "c",
+        "**/*.lex": "lex",
         "**/*.log*": "log",
         "**/*.mak": "makefile",
         "**/*.mk": "makefile",
+        "**/*.plist": "xml",
         "**/*.rockspec": "lua",
         "**/*.sxx": "systemtap",
-        "**/*.y": "c",
+        "**/*.txt": "log",
+        "**/*.y": "yacc",
         "**/*dockerfile": "dockerfile",
         "**/.luacheckrc": "lua",
         "**/.vscode/.easyRedis.redis": "json",
+        "**/Kconfig*": "kconfig",
         "**/Makefile.*": "makefile",
+        "**/Portfile": "tcl",
         "**/auto/**/*": "shellscript",
         "**/localconf": "lua",
         "**/ngx*/**/*.t": "lua",
         "**/opconf.example": "lua",
-        "**/opconf.lua*": "lua"
+        "**/opconf.lua*": "lua",
+        "**/patch-*": "diff"
     },
     "files.hotExit": "onExitAndWindowClose",
+    "files.legacyWatcher": "off",
     "files.maxMemoryForLargeFilesMB": 1024,
     "files.trimTrailingWhitespace": true,
+    "files.watcherExclude": {
+        "**/output/**": true
+    },
     "git-graph.commitDetailsView.location": "Docked to Bottom",
     "git-graph.dialog.addTag.pushToRemote": true,
     "git-graph.dialog.merge.noFastForward": false,
@@ -147,6 +164,9 @@
     "git-graph.repository.commits.showSignatureStatus": true,
     "git.ignoreLegacyWarning": true,
     "git.showPushSuccessNotification": true,
+    "gitlens.advanced.fileHistoryFollowsRenames": true,
+    "gitlens.fileAnnotations.command": "blame",
+    "go.toolsManagement.checkForUpdates": "local",
     "highlight.decorations": {
         "rangeBehavior": 0
     },
@@ -244,6 +264,7 @@
     "python.formatting.provider": "black",
     "python.linting.enabled": true,
     "python.workspaceSymbols.enabled": true,
+    "redhat.telemetry.enabled": false,
     "remote.SSH.defaultExtensions": [
         "mhutchie.git-graph",
         "rsbondi.highlight-words",
@@ -275,6 +296,8 @@
     "terminal.integrated.scrollback": 100000,
     "update.mode": "manual",
     "window.title": "${activeEditorMedium} ${dirty}${separator}${rootName}${separator}${rootPath}",
+    "window.zoomLevel": -1,
+    "workbench.colorTheme": "Default Dark+",
     "workbench.editor.restoreViewState": false,
     "workbench.iconTheme": "material-icon-theme",
     "workbench.sideBar.location": "right"

@@ -65,5 +65,13 @@
     {
         "key": "alt+`",
         "command": "workbench.action.terminal.focusNext"
+    },
+    {
+        "key": "ctrl+shift+left",
+        "command": "workbench.action.decreaseViewWidth"
+    },
+    {
+        "key": "ctrl+shift+right",
+        "command": "workbench.action.increaseViewWidth"
     }
 ]
