@@ -51,7 +51,7 @@ NPM_PACKAGES="${HOME}/.npm-packages"
 export PATH="$PATH:$NPM_PACKAGES/bin"
 export MANPATH="${MANPATH-$(manpath)}:$NPM_PACKAGES/share/man"
 
-#export MACOSX_DEPLOYMENT_TARGET=10.14  # Fix unwind symbol not found by ld issue
+export MACOSX_DEPLOYMENT_TARGET=10.14  # Fix unwind symbol not found by ld issue
 
 safepath ()
 {

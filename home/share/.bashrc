@@ -75,12 +75,14 @@ fi
 # see https://en.wikipedia.org/wiki/ANSI_escape_code
 if [ "$color_prompt" = yes ]; then
     if [ "$(id -u)" != 0 ]; then
-        PS1='$? ${debian_chroot:+($debian_chroot)}\[\e[48;5;173m\]\u\[\e[48;5;244m\]@\h\[\e[48;5;106m\] \w \[\e[0m\]$(__git_ps1 " (%s)")\n\[\e[31m\]\$\[\e[0m\] '
+        # PS1='$? ${debian_chroot:+($debian_chroot)}\[\e[48;5;173m\]\u\[\e[48;5;244m\]@\h\[\e[48;5;106m\] \w \[\e[0m\]$(__git_ps1 " (%s)")\n\[\e[31m\]\$\[\e[0m\] '
+        PS1='$? \[\e[48;5;106m\] \w \[\e[0m\]$(__git_ps1 " (%s)")\n\[\e[31m\]\$\[\e[0m\] '
     else
-        PS1='$? ${debian_chroot:+($debian_chroot)}\[\e[91m\]\u\[\e[0;48;5;244m\]@\h\[\e[48;5;68m\] \w \[\e[0m\]$(__git_ps1 " (%s)")\n\[\e[31m\]\$\[\e[0m\] '
+        # PS1='$? ${debian_chroot:+($debian_chroot)}\[\e[91m\]\u\[\e[0;48;5;244m\]@\h\[\e[48;5;68m\] \w \[\e[0m\]$(__git_ps1 " (%s)")\n\[\e[31m\]\$\[\e[0m\] '
+        PS1='$? \[\e[48;5;68m\] \w \[\e[0m\]$(__git_ps1 " (%s)")\n\[\e[31m\]\$\[\e[0m\] '
     fi
 else
-    PS1='$? ${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+    PS1='$?\u@\h:\w\$ '
 fi
 unset color_prompt force_color_prompt
 
