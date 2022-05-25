@@ -88,7 +88,9 @@
         "--break-one-line-headers",
         "--max-code-length=120",
         "--indent-preproc-define",
-        "--indent-preproc-block"
+        "--indent-preproc-block",
+        "--indent-after-parens",
+        "--break-blocks",
     ],
     "cmake.configureOnOpen": false,
     "customizablePreview.rules": [
@@ -137,6 +139,7 @@
         "**/*.sxx": "systemtap",
         "**/*.txt": "log",
         "**/*.y": "yacc",
+        "**/*.dasc": "asm-collection",
         "**/*dockerfile": "dockerfile",
         "**/.luacheckrc": "lua",
         "**/.vscode/.easyRedis.redis": "json",
@@ -294,11 +297,14 @@
         }
     },
     "terminal.integrated.scrollback": 100000,
-    "update.mode": "manual",
     "window.title": "${activeEditorMedium} ${dirty}${separator}${rootName}${separator}${rootPath}",
     "window.zoomLevel": -1,
     "workbench.colorTheme": "Default Dark+",
     "workbench.editor.restoreViewState": false,
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.sideBar.location": "right"
+    "workbench.sideBar.location": "right",
+    "[c]": {
+        "editor.defaultFormatter": "chiehyu.vscode-astyle"
+    },
+    "asm-code-lens.includeFiles": "**/*.{asm,inc,s,S,a80,dasc}"
 }
