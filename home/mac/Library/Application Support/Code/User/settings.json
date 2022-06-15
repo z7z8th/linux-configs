@@ -51,6 +51,9 @@
     ],
     "Lua.workspace.preloadFileSize": 1000,
     "Lua.workspace.useGitIgnore": false,
+    "[c]": {
+        "editor.defaultFormatter": "chiehyu.vscode-astyle"
+    },
     "[cpp]": {
         "editor.defaultFormatter": "chiehyu.vscode-astyle"
     },
@@ -81,6 +84,7 @@
         "files.trimFinalNewlines": true,
         "files.trimTrailingWhitespace": true
     },
+    "asm-code-lens.includeFiles": "**/*.{asm,inc,s,S,a80,dasc}",
     "astyle.cmd_options": [
         "--style=linux",
         "--pad-oper",
@@ -90,7 +94,7 @@
         "--indent-preproc-define",
         "--indent-preproc-block",
         "--indent-after-parens",
-        "--break-blocks",
+        "--break-blocks"
     ],
     "cmake.configureOnOpen": false,
     "customizablePreview.rules": [
@@ -130,6 +134,7 @@
     "extensions.autoUpdate": false,
     "files.associations": {
         "**/*.c.orig": "c",
+        "**/*.dasc": "asm-collection",
         "**/*.lex": "lex",
         "**/*.log*": "log",
         "**/*.mak": "makefile",
@@ -139,7 +144,6 @@
         "**/*.sxx": "systemtap",
         "**/*.txt": "log",
         "**/*.y": "yacc",
-        "**/*.dasc": "asm-collection",
         "**/*dockerfile": "dockerfile",
         "**/.luacheckrc": "lua",
         "**/.vscode/.easyRedis.redis": "json",
@@ -168,7 +172,9 @@
     "git.ignoreLegacyWarning": true,
     "git.showPushSuccessNotification": true,
     "gitlens.advanced.fileHistoryFollowsRenames": true,
+    "gitlens.currentLine.scrollable": false,
     "gitlens.fileAnnotations.command": "blame",
+    "gitlens.hovers.currentLine.over": "line",
     "go.toolsManagement.checkForUpdates": "local",
     "highlight.decorations": {
         "rangeBehavior": 0
@@ -302,9 +308,5 @@
     "workbench.colorTheme": "Default Dark+",
     "workbench.editor.restoreViewState": false,
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.sideBar.location": "right",
-    "[c]": {
-        "editor.defaultFormatter": "chiehyu.vscode-astyle"
-    },
-    "asm-code-lens.includeFiles": "**/*.{asm,inc,s,S,a80,dasc}"
+    "workbench.sideBar.location": "right"
 }
