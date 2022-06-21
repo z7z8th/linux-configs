@@ -87,13 +87,15 @@ precmd  () { print -Pn "\e]0;%n:%~/\a" }
 preexec  () { print -Pn "\e]0;%n:%~/\a" }
 # bash uses PROMPT_COMMAND
 
+arch_ssh() { env | grep SSH_CLIENT > /dev/null && uname -m }
+
 . ~/.zsh/git-prompt.sh
 
 if [ "$color_prompt" = yes ]; then
     if [ "$kernel" = Darwin ]; then
         # PS1=$'$? %{$(tput init)%}%{\e[48;5;173m%}%n%{\e[48;5;244m%}@%m%{\e[m \e[48;5;106m%} %<..<%~%<< %{\e[0m%}$(__git_ps1 " (%s)")
 #%{\e[0;38;5;163m%}%#%{\e[0m%} '
-        PS1=$'$? %{$(tput init)%}%{\e[m \e[48;5;106m%} %<..<%~%<< %{\e[0m%}$(__git_ps1 " (%s)")
+        PS1=$'$? %{$(tput init)%}%{\e[97;100m%}$(arch_ssh)%{\e[m \e[48;5;106m%} %<..<%~%<< %{\e[0m%}$(__git_ps1 " (%s)")
 %{\e[0;38;5;163m%}%#%{\e[0m%} '
     else
         # PS1=$'$? %{$(tput init)%}%{\e[48;5;163m%}%n%{\e[48;5;244m%}@%m%{\e[m \e[48;5;106m%} %<..<%~%<< %{\e[0m%}$(__git_ps1 " (%s)")
