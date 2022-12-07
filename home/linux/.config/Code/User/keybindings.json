@@ -1043,6 +1043,13 @@
 	{
 		"key": "ctrl+alt+k",
 		"command": "highlightwords.addHighlight"
-	}
-
+	},
+	{
+		"key": "alt+b",
+		"command": "workbench.action.toggleSidebarVisibility"
+	},
+	{
+		"key": "ctrl+b",
+		"command": "-workbench.action.toggleSidebarVisibility"
+        }
 ]
