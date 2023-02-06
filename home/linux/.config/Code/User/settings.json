@@ -173,15 +173,15 @@
         "highlight.maxMatches": 0,
         "highlight.regexFlags": "g",
         "highlight.regexes": {
-                "(\\bNOTE:?|\\bNote:|[^.]\\bNOTICE:?|^NOTICE:?|Notice:|[^.]\\bDEBUG:?|^DEBUG:?|Debug:|debug:)([^:\r\n]*)": {
-                                "decorations": [
+                "(\\bNOTE:?|\\bNote:|[^.]\\bNOTICE:?|^NOTICE:?|Notice:|[^.]\\bDEBUG:?|^DEBUG:?|Debug:|debug:)(\\b[^:\r\n]*)": {
+                        "decorations": [
                                 {
                                         "backgroundColor": "cadetblue",
                                         "color": "white"
                                 },
                         ]
                 },
-                "\\b(TODO:?|todo:?|Todo:?|ToDo:?|FIXME:?|fixme:?|Fixme:?|FixMe:?|CAUTION:?|Caution:?|BUG:?|Bug:?|bug:|IMPORTANT:?|Important:?|important:?)([^:\r\n]*)": {
+                "\\b(TODO:?|todo:?|Todo:?|ToDo:?|FIXME:?|fixme:?|Fixme:?|FixMe:?|CAUTION:?|Caution:?|BUG:?|Bug:?|bug:|IMPORTANT:?|Important:?|important:?)(\\b[^:\r\n]*)": {
                         "decorations": [
                                 {
                                         "backgroundColor": "tomato",

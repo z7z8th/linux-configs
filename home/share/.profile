@@ -67,10 +67,10 @@ export PATH=/usr/local/cuda-11.4/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-11.4/lib64${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
 
 # set scale factor in application specific .desktop file
-# if [ "$kernel" = Linux ]; then
-#     HiDPI_SCALE=$(xrandr  --current | gawk 'match($0, /primary ([0-9]+)x([0-9]+).*\(.*\) ([0-9]+)mm x ([0-9]+)mm/, m) { print m[1]/m[3]*25.4/96 }')
-#     export QT_SCALE_FACTOR=$HiDPI_SCALE
-# fi
+if [ "$kernel" = Linux ]; then
+    HiDPI_SCALE=$(xrandr  --current | gawk 'match($0, /primary ([0-9]+)x([0-9]+).*\(.*\) ([0-9]+)mm x ([0-9]+)mm/, m) { print m[1]/m[3]*25.4/105 }')
+    export QT_SCALE_FACTOR=$HiDPI_SCALE
+fi
 
 if [ -f "$HOME/.bashrc" ] && [ -n "$BASH_VERSION" ]; then
     . ~/.bashrc
